@@ -78,16 +78,16 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 
 ##### In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
 
-### Note: 
-In a university setting, think of a Student class where each student has unique names, ages, and majors; these are known as instance attributes because they vary for each student object. For example, one student might be named "Alice" while another is "Bob." However, if we consider a database for a specific university, the university name, such as "University of Texas," remains the same for all students; hence, it's defined as a class attribute. This design choice saves memory, as it avoids duplicating the same university name for every student object, making the code more efficient and organized.
-
 #### Scope:
 - Attributes (both class and instance) are associated with a class or an instance, while variables can exist independently.
 
 #### Usage:
 - Attributes represent the properties of an object and define its state, whereas variables are more general-purpose and can hold any type of data.
 
-### Note: 
+### Note 1: 
+In a university setting, think of a Student class where each student has unique names, ages, and majors; these are known as instance attributes because they vary for each student object. For example, one student might be named "Alice" while another is "Bob." However, if we consider a database for a specific university, the university name, such as "University of Texas," remains the same for all students; hence, it's defined as a class attribute. This design choice saves memory, as it avoids duplicating the same university name for every student object, making the code more efficient and organized
+
+### Note 2: 
 In Python, **object (or instance) attributes** take precedence over **class attributes** when accessing attribute values. When an attribute is accessed on an object, Python first checks if that attribute exists as an instance attribute for that specific object. If it does, Python uses that value. If the instance attribute does not exist, Python then looks for a class attribute with the same name in the class to which the object belongs. This hierarchy ensures that individual instances can have their own unique values while still benefiting from shared class-level attributes.
 
 ```python
