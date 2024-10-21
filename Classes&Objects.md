@@ -9,18 +9,18 @@
 - Use the `class` keyword followed by the class name (capitalized by convention).
 
 ```python
-class Car:
+class Motorbike:
     pass  # Placeholder for now
 ```
 
 # Attributes and Methods
 
-- **Attributes**: Characteristics of an object (e.g., a car's `make`, `model`, `year`, `color`).
+- **Attributes**: Characteristics of an object (e.g., a motorbike's `make`, `model`, `year`, `color`).
   
 - **Methods**: Functions that define what the object can do (e.g., `drive()` and `stop()`).
 
 ```python
-class Car:
+class Motorbike:
     def __init__(self, make, model, year, color):
         self.make = make
         self.model = model
@@ -45,7 +45,7 @@ class Car:
 - To create an object from a class, use the class name and provide the necessary attributes:
 
 ```python
-motorbike1 = Car("Yamaha", "MT-07", 2024, "Black")
+motorbike1 = Motorbike("Yamaha", "MT-07", 2024, "Black")
 ```
 
 # Accessing Attributes and Methods
@@ -69,7 +69,7 @@ motorbike1.drive()  # motorbike1 is passed as self
 - You can create multiple objects from the same class blueprint.
 
 ```python
-motorbike2 = Car("Suzuki", "Hayabusa", 2023, "Silver")
+motorbike2 = Motorbike("Suzuki", "Hayabusa", 2023, "Silver")
 motorbike2.drive()  # Output: Hayabusa is driving
 ```
 Reference: https://www.youtube.com/watch?v=q2SGW2VgwAM
