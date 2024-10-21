@@ -92,7 +92,7 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 - **Inheritance**
 - **Polymorphism**
 
-# 1. Encapsulation
+## 1. Encapsulation
 
 **Explanation**: 
 Encapsulation is the practice of hiding the internal details of a class and providing a public interface to interact with the object. It involves:
