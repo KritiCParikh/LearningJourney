@@ -92,7 +92,7 @@ Encapsulation is the practice of hiding the internal details of a class and prov
 - Providing public methods (getters and setters) to access and modify the data.
 - Controlling access to internal data and methods.
 
-**Benefits** include improved security, data hiding, and modularity.
+It include improved security, data hiding, and modularity.
 
 **Real World Explanation**: 
 Think of encapsulation as putting your motorbike’s engine, wheels, and seat inside a protective cover. You can ride the bike without needing to know how each part works. Encapsulation keeps the details hidden and only allows you to interact with what you need.
@@ -117,18 +117,18 @@ print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Vivid 
 
 ## 2. Abstraction
 
-### Explanation:
-Abstraction involves simplifying complex systems by modeling classes based on the essential properties and behaviors. It:
+**Explanation**:
+Abstraction involves simplifying complex systems by modeling classes based on the essential properties and behaviors. It: 
+
 - Hides complex implementation details
 - Exposes only relevant features of an object
 - Allows focus on what an object does rather than how it does it
 - Abstraction is often implemented using abstract classes and interfaces
 
-### Real-world Explanation:
-**Simple Explanation**: Abstraction is like a car's dashboard. You see the speedometer, fuel gauge, and buttons, but you don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
+**Real World Explanation**:
+Abstraction is like a car's dashboard. You see the speedometer, fuel gauge, and buttons, but you don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
 
-### Example:
-In our motorbike example, we can change the color of the motorbike without knowing the details of how that change is managed. The `set_color()` method allows us to interact with the bike without worrying about its internal workings.
+**Example**: In our motorbike example, we can change the color of the motorbike without knowing the details of how that change is managed. The `set_color()` method allows us to interact with the bike without worrying about its internal workings.
 
 ```python
 class Motorbike:
