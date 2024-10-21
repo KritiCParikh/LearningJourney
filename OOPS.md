@@ -76,12 +76,12 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 - **Definition**: Instance attributes are variables that are specific to each instance of the class. They are defined within the `__init__` method (initializer) and are accessed through the `self` parameter.
 - **Example**: `model`, `engine_capacity`, and `color` are instance attributes. Each instance of `Motorbike` can have different values for these attributes. For instance, `motorbike1` has the model "Street Glide" and an engine capacity of 1753cc, while `motorbike2` has the model "Iron 883" and an engine capacity of 883cc.
 
-In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
+#### In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
 
-### Scope:
+#### Scope:
 - Attributes (both class and instance) are associated with a class or an instance, while variables can exist independently.
 
-### Usage:
+##### Usage:
 - Attributes represent the properties of an object and define its state, whereas variables are more general-purpose and can hold any type of data.
 
 # Core Concepts of OOP
