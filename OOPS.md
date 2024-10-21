@@ -2,6 +2,8 @@
 
 Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to represent data and methods and model real-world entities. It helps organize code, making it easier to manage, understand, and reuse.
 
+OOP (Object-Oriented Programming) promotes code reusability, modularity, and scalability, making it easier to manage and understand complex software systems. It increases code reusability and reduces redundancy. Initially, the code was written in a procedural style, then functions were introduced, and finally, the OOP concept was adopted.
+
 # Classes and Objects
 
 **Class:** A blueprint for creating objects. It defines properties (attributes) and behaviors (methods).
@@ -28,8 +30,6 @@ print(my_dog.name)  # Output: Buddy
 
 In this scenario, the class represents a motorbike company. We'll create a class named `Motorbike`, which defines the general attributes and methods that all motorbikes produced by this company will have.
 
-### Python Code
-
 ```python
 class Motorbike:
     # Class Attribute
@@ -49,8 +49,6 @@ class Motorbike:
 
 Now, let's create objects that represent specific models from Harley-Davidson, such as the Street 750 and Sportster 1200. Each object can have its own unique characteristics but will share the general structure defined in the `Motorbike` class.
 
-### Python Code
-
 ```python
 # Creating objects of the Motorbike class
 motorbike1 = Motorbike("Street Glide", 1753, "Vivid Black")  
@@ -68,3 +66,39 @@ The `Motorbike` class represents Harley-Davidson, a renowned motorbike company. 
 ### Object as Specific Motorbike Models:
 Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide and `motorbike2` for the Iron 883) represents a specific model produced by Harley-Davidson. Each model has its own unique attributes (e.g., engine capacity and color) while sharing the structure defined by the class.
 
+## Class Variables vs. Instance Variables
+
+### Class Attribute:
+- **Definition**: A class attribute is a variable that is shared across all instances of the class. It is defined within the class but outside any instance methods.
+- **Example**: `company_name` is a class attribute, and all instances of `Motorbike` will have access to this attribute. This means that if you were to change `company_name` to a different value, it would change for all instances.
+
+### Instance Attributes:
+- **Definition**: Instance attributes are variables that are specific to each instance of the class. They are defined within the `__init__` method (initializer) and are accessed through the `self` parameter.
+- **Example**: `model`, `engine_capacity`, and `color` are instance attributes. Each instance of `Motorbike` can have different values for these attributes. For instance, `motorbike1` has the model "Street Glide" and an engine capacity of 1753cc, while `motorbike2` has the model "Iron 883" and an engine capacity of 883cc.
+
+# Core Concepts of OOP
+
+- **Encapsulation**
+- **Abstraction**
+- **Inheritance**
+- **Polymorphism**
+
+
+
+
+
+
+
+
+
+
+
+
+## Summary
+
+- Classes are blueprints for creating objects.
+- Objects are instances of classes.
+- Encapsulation keeps data safe from outside interference.
+- Inheritance allows for extending classes.
+- Polymorphism allows for different classes to be treated as instances of the same class.
+- Abstraction hides complex details and exposes only what is necessary.
