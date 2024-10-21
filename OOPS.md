@@ -83,6 +83,75 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 - **Inheritance**
 - **Polymorphism**
 
+# 1. Encapsulation
+
+**Explanation**: 
+Encapsulation is the practice of hiding the internal details of a class and providing a public interface to interact with the object. It involves:
+
+- Making data members private.
+- Providing public methods (getters and setters) to access and modify the data.
+- Controlling access to internal data and methods.
+
+**Benefits** include improved security, data hiding, and modularity.
+
+**Real World Explanation**: 
+Think of encapsulation as putting your motorbike’s engine, wheels, and seat inside a protective cover. You can ride the bike without needing to know how each part works. Encapsulation keeps the details hidden and only allows you to interact with what you need.
+
+**Example**: In the `Motorbike` class, attributes like `model`, `engine_capacity`, and `color` are kept private. This means you can't change them directly from outside the class. Instead, you use methods (like `display_info()`) to interact with them.
+
+```python
+class Motorbike:
+    def __init__(self, model, engine_capacity, color):
+        self.__model = model           # Private attribute
+        self.__engine_capacity = engine_capacity  # Private attribute
+        self.__color = color           # Private attribute
+
+    # Public method to get motorbike details
+    def display_info(self):
+        return f"{self.__model} - {self.__engine_capacity}cc, Color: {self.__color}"
+
+motorbike1 = Motorbike("Street Glide", 1753, "Vivid Black")
+print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Vivid Black.
+    #Attributes are marked as private using double underscores (__). The display_info() method provides controlled access to the private attributes.
+```
+## 2. Abstraction
+
+### Explanation:
+Abstraction involves simplifying complex systems by modeling classes based on the essential properties and behaviors. It:
+- Hides complex implementation details
+- Exposes only relevant features of an object
+- Allows focus on what an object does rather than how it does it
+- Abstraction is often implemented using abstract classes and interfaces
+
+### Real-world Explanation:
+**Simple Explanation**: Abstraction is like a car's dashboard. You see the speedometer, fuel gauge, and buttons, but you don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
+
+### Example:
+In our motorbike example, we can change the color of the motorbike without knowing the details of how that change is managed. The `set_color()` method allows us to interact with the bike without worrying about its internal workings.
+
+```python
+class Motorbike:
+    def __init__(self, model, engine_capacity, color):
+        self.__model = model
+        self.__engine_capacity = engine_capacity
+        self.__color = color
+
+    # Public method to set new color
+    def set_color(self, color):
+        self.__color = color
+
+    # Public method to get motorbike details
+    def display_info(self):
+        return f"{self.__model} - {self.__engine_capacity}cc, Color: {self.__color}"
+
+motorbike1 = Motorbike("Street Glide", 1753, "Vivid Black")
+motorbike1.set_color("Midnight Blue")  # Changing color using an abstracted method
+print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Midnight Blue
+    # This example correctly illustrates abstraction by:
+- **Hiding internal details**: The attributes are private (denoted by double underscores).
+- **Providing public methods**: `set_color()` and `display_info()` allow interaction with the object without exposing its internals.
+- **Simplifying interaction**: Users can change the color without knowing how it's implemented internally.
+
 
 
 
