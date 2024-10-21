@@ -85,6 +85,32 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 ##### Usage:
 - Attributes represent the properties of an object and define its state, whereas variables are more general-purpose and can hold any type of data.
 
+### Note: 
+In Python, **object (or instance) attributes** take precedence over **class attributes** when accessing attribute values. When an attribute is accessed on an object, Python first checks if that attribute exists as an instance attribute for that specific object. If it does, Python uses that value. If the instance attribute does not exist, Python then looks for a class attribute with the same name in the class to which the object belongs. This hierarchy ensures that individual instances can have their own unique values while still benefiting from shared class-level attributes.
+
+```python
+class Student:
+    university_name = "University of Texas"  # Class attribute
+
+    def __init__(self, name):
+        self.name = name  # Instance attribute
+
+# Creating an instance of the Student class
+student1 = Student("Alice")
+student2 = Student("Bob")
+
+# Accessing the class attribute through the instance
+print(student1.university_name)  # Output: University of Texas
+print(student2.university_name)  # Output: University of Texas
+
+# Let's add an instance attribute with the same name
+student1.university_name = "Texas A&M"  # Instance attribute takes precedence
+
+# Now, when we access the university_name for student1, it will show the instance attribute
+print(student1.university_name)  # Output: Texas A&M
+print(student2.university_name)  # Output: University of Texas (still uses the class attribute)
+```
+
 # Core Concepts of OOP
 
 - **Encapsulation**
