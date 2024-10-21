@@ -11,6 +11,7 @@
 ```python
 class Car:
     pass  # Placeholder for now
+```
 
 # Attributes and Methods
 
@@ -31,8 +32,8 @@ class Car:
         
     def stop(self):
         print(f"{self.model} is stopped")
-'''
 
+```
 # The `__init__()` Method
 
 - `__init__()` is a special method, known as a **constructor**.
@@ -45,6 +46,7 @@ class Car:
 
 ```python
 motorbike1 = Car("Yamaha", "MT-07", 2024, "Black")
+```
 
 # Accessing Attributes and Methods
 
@@ -54,14 +56,14 @@ motorbike1 = Car("Yamaha", "MT-07", 2024, "Black")
 print(motorbike1.make)  # Output: Yamaha
 motorbike1.drive()       # Output: MT-07 is driving
 motorbike1.stop()        # Output: MT-07 is stopped
-
+```
 # Self and Method Calls
 
 - You don’t explicitly pass `self` when calling methods. Python automatically passes the object instance.
 
 ```python
 motorbike1.drive()  # motorbike1 is passed as self
-
+```
 # Creating Multiple Objects
 
 - You can create multiple objects from the same class blueprint.
@@ -69,5 +71,5 @@ motorbike1.drive()  # motorbike1 is passed as self
 ```python
 motorbike2 = Car("Suzuki", "Hayabusa", 2023, "Silver")
 motorbike2.drive()  # Output: Hayabusa is driving
-
+```
 Reference: https://www.youtube.com/watch?v=q2SGW2VgwAM
