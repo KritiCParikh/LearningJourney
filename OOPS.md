@@ -76,6 +76,14 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 - **Definition**: Instance attributes are variables that are specific to each instance of the class. They are defined within the `__init__` method (initializer) and are accessed through the `self` parameter.
 - **Example**: `model`, `engine_capacity`, and `color` are instance attributes. Each instance of `Motorbike` can have different values for these attributes. For instance, `motorbike1` has the model "Street Glide" and an engine capacity of 1753cc, while `motorbike2` has the model "Iron 883" and an engine capacity of 883cc.
 
+In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
+
+### Scope:
+- Attributes (both class and instance) are associated with a class or an instance, while variables can exist independently.
+
+### Usage:
+- Attributes represent the properties of an object and define its state, whereas variables are more general-purpose and can hold any type of data.
+
 # Core Concepts of OOP
 
 - **Encapsulation**
@@ -154,16 +162,114 @@ print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Midnig
 - **Providing public methods**: `set_color()` and `display_info()` allow interaction with the object without exposing its internals.
 - **Simplifying interaction**: Users can change the color without knowing how it's implemented internally.
 
+## 3. Inheritance
 
+**Explanation**:
+Inheritance allows a class to inherit properties and methods from another class. It:
 
+- Enables code reuse
+- Creates class hierarchies
+- Extends the functionality of existing classes
 
+A class that inherits is called a **subclass** or **child class**, while the class being inherited from is the **superclass** or **parent class**.
 
+**Real World Explanation**:
+Inheritance is like a family tree. Just as children inherit traits from their parents, classes can inherit properties and behaviors from other classes. This saves time because you don’t have to rewrite the same code.
 
+**Example**: In our motorbike example, the `HarleyDavidson` and `Kawasaki` classes inherit from the `Motorbike` class. They get all the basic features of a motorbike and can add their specific details.
 
+```python
+class Motorbike:
+    def __init__(self, model, engine_capacity, color):
+        self.model = model
+        self.engine_capacity = engine_capacity
+        self.color = color
 
+    def display_info(self):
+        return f"{self.model} - {self.engine_capacity}cc, Color: {self.color}"
 
+# Subclass for Harley-Davidson
+class HarleyDavidson(Motorbike):
+    company_name = "Harley-Davidson"
 
+    def display_info(self):
+        return f"{self.company_name} {self.model} - {self.engine_capacity}cc, Color: {self.color}"
 
+# Subclass for Kawasaki
+class Kawasaki(Motorbike):
+    company_name = "Kawasaki"
+
+    def display_info(self):
+        return f"{self.company_name} {self.model} - {self.engine_capacity}cc, Color: {self.color}"
+
+hd_motorbike = HarleyDavidson("Street Glide", 1753, "Vivid Black")
+kawasaki_motorbike = Kawasaki("Ninja 650", 649, "Lime Green")
+
+print(hd_motorbike.display_info())  # Output: Harley-Davidson Street Glide - 1753cc, Color: Vivid Black
+print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, Color: Lime Green
+```
+#### This example correctly illustrates inheritance by:
+- **Creating a base class**: The `Motorbike` class contains common attributes and methods.
+- **Defining subclasses**: The `HarleyDavidson` and `Kawasaki` classes inherit from `Motorbike`, gaining its attributes and methods.
+- **Overriding methods [a form of polymorphism]**: Each subclass provides its own implementation of the `display_info()` method to include company-specific information.
+- **Using polymorphism**: When `display_info()` is called on objects of these subclasses, their specific versions are executed instead of the one in the `Motorbike` class.
+
+## 4. Polymorphism
+
+**Explanation**:  
+Polymorphism allows objects of different classes to be treated as objects of a common superclass. It:
+
+- Enables flexibility in code
+- Supports method overriding and overloading
+- Allows for dynamic method resolution at runtime
+
+Polymorphism means “many shapes.” It allows methods to do different things based on which object calls them.
+
+**Real World Explanation**:  
+- Polymorphism means “many shapes.” It allows methods to do different things based on which object calls them. Imagine different types of bikes having the same button that starts the engine, but each bike has its unique sound when it starts.
+- Think of polymorphism like a universal remote control. Just as a single remote can operate different devices (TV, DVD player, etc.) differently, polymorphism allows different classes to define the same method name but with different behaviors.
+
+**Example**: In our motorbike example, both the `HarleyDavidson` and `Kawasaki` classes have a `display_info()` method. When we call this method on different objects, it shows the specific details of that object, even though the method name is the same.
+
+```python
+class Motorbike:
+    def __init__(self, model, engine_capacity, color):
+        self.model = model
+        self.engine_capacity = engine_capacity
+        self.color = color
+
+    def display_info(self):
+        return f"{self.model} - {self.engine_capacity}cc, Color: {self.color}"
+
+# Subclass for Harley-Davidson
+class HarleyDavidson(Motorbike):
+    company_name = "Harley-Davidson"
+
+    def display_info(self):
+        return f"{self.company_name} {self.model} - {self.engine_capacity}cc, Color: {self.color}"
+
+# Subclass for Kawasaki
+class Kawasaki(Motorbike):
+    company_name = "Kawasaki"
+
+    def display_info(self):
+        return f"{self.company_name} {self.model} - {self.engine_capacity}cc, Color: {self.color}"
+
+# Polymorphism in action
+def display_motorbike_info(motorbike):
+    print(motorbike.display_info())
+
+hd_motorbike = HarleyDavidson("Street Glide", 1753, "Vivid Black")
+kawasaki_motorbike = Kawasaki("Ninja 650", 649, "Lime Green")
+
+display_motorbike_info(hd_motorbike)        # Output: Harley-Davidson Street Glide - 1753cc, Color: Vivid Black
+display_motorbike_info(kawasaki_motorbike)   # Output: Kawasaki Ninja 650 - 649cc, Color: Lime Green
+```
+This example illustrates polymorphism by:
+
+- **Using a single function** `display_motorbike_info()` that can work with different types of motorbike objects.
+- **Calling the same method** `display_info()` on different objects (`HarleyDavidson` and `Kawasaki`).
+- **Showing how the same method call** produces different outputs based on the specific object type.
 
 ## Summary
 
