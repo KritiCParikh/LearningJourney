@@ -112,8 +112,9 @@ class Motorbike:
 
 motorbike1 = Motorbike("Street Glide", 1753, "Vivid Black")
 print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Vivid Black.
-    #Attributes are marked as private using double underscores (__). The display_info() method provides controlled access to the private attributes.
 ```
+#### Attributes are marked as private using double underscores (__). The display_info() method provides controlled access to the private attributes.
+
 ## 2. Abstraction
 
 ### Explanation:
@@ -147,7 +148,8 @@ class Motorbike:
 motorbike1 = Motorbike("Street Glide", 1753, "Vivid Black")
 motorbike1.set_color("Midnight Blue")  # Changing color using an abstracted method
 print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Midnight Blue
-    # This example correctly illustrates abstraction by:
+```
+#### This example correctly illustrates abstraction by:
 - **Hiding internal details**: The attributes are private (denoted by double underscores).
 - **Providing public methods**: `set_color()` and `display_info()` allow interaction with the object without exposing its internals.
 - **Simplifying interaction**: Users can change the color without knowing how it's implemented internally.
