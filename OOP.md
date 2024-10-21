@@ -76,8 +76,10 @@ Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide a
 - **Definition**: Instance attributes are variables that are specific to each instance of the class. They are defined within the `__init__` method (initializer) and are accessed through the `self` parameter.
 - **Example**: `model`, `engine_capacity`, and `color` are instance attributes. Each instance of `Motorbike` can have different values for these attributes. For instance, `motorbike1` has the model "Street Glide" and an engine capacity of 1753cc, while `motorbike2` has the model "Iron 883" and an engine capacity of 883cc.
 
-## In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
-**Example:** In a university setting, think of a Student class where each student has unique names, ages, and majors; these are known as instance attributes because they vary for each student object. For example, one student might be named "Alice" while another is "Bob." However, if we consider a database for a specific university, the university name, such as "University of Texas," remains the same for all students; hence, it's defined as a class attribute. This design choice saves memory, as it avoids duplicating the same university name for every student object, making the code more efficient and organized.
+##### In programming, particularly in object-oriented programming (OOP), the terms **"variables"** and **"attributes"** are often used interchangeably, but they can have distinct meanings depending on the context.
+
+##### Note: 
+In a university setting, think of a Student class where each student has unique names, ages, and majors; these are known as instance attributes because they vary for each student object. For example, one student might be named "Alice" while another is "Bob." However, if we consider a database for a specific university, the university name, such as "University of Texas," remains the same for all students; hence, it's defined as a class attribute. This design choice saves memory, as it avoids duplicating the same university name for every student object, making the code more efficient and organized.
 
 #### Scope:
 - Attributes (both class and instance) are associated with a class or an instance, while variables can exist independently.
