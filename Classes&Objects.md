@@ -5,6 +5,9 @@
 - **Classes** act as blueprints to create objects, defining their attributes (data) and methods (functions).
 
 # Defining a Class
+In Python, a class is a blueprint for creating objects, and it can have a special method called a constructor. The constructor is defined by the __init__ method and is automatically called when a new instance (object) of the class is created. This method is used to initialize the object's attributes and set up any necessary state for the object.
+
+If you do not explicitly define a constructor in your class, Python automatically provides a default constructor. The **default constructor** does not take any parameters (other than self) and does not perform any initialization. 
 
 - Use the `class` keyword followed by the class name (capitalized by convention).
 
