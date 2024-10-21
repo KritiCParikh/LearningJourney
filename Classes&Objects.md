@@ -31,6 +31,7 @@ class Car:
         
     def stop(self):
         print(f"{self.model} is stopped")
+'''
 
 # The `__init__()` Method
 
