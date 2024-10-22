@@ -138,6 +138,52 @@ print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, 
 - **Overriding methods [a form of polymorphism]**: Each subclass provides its own implementation of the `display_info()` method to include company-specific information.
 - **Using polymorphism**: When `display_info()` is called on objects of these subclasses, their specific versions are executed instead of the one in the `Motorbike` class.
 
+### Types of Inheritance:
+
+1. **Single Inheritance**: 
+   A class inherits from a single parent class.
+   
+   **Example**: 
+   ```python
+   class HarleyDavidson(Motorbike):
+       pass
+   ```
+2. **Multiple Inheritance**:  
+A class can inherit from more than one parent class.
+
+**Example**:  
+```python
+class HybridBike(Motorbike, ElectricVehicle):
+    pass
+```
+3. **Multilevel Inheritanc**e:  
+Multilevel inheritance is a type of inheritance where a class derives from another class, which is itself derived from a further class. This forms a **chain of inheritance**, with properties and methods cascading down through multiple levels of the class hierarchy.
+
+In simpler terms, if Class C inherits from Class B, and Class B inherits from Class A, then Class C indirectly inherits the properties and methods of Class A through Class B.
+
+**Example**: 
+```python
+class MotorVehicle:
+    def __init__(self, vehicle_type):
+        self.vehicle_type = vehicle_type
+
+class Motorbike(MotorVehicle):
+    def __init__(self, model, engine_capacity, color):
+        super().__init__("Motorbike")
+        self.model = model
+        self.engine_capacity = engine_capacity
+        self.color = color
+
+class HarleyDavidson(Motorbike):
+    company_name = "Harley-Davidson"
+
+    def display_info(self):
+        return f"{self.company_name} {self.model} - {self.engine_capacity}cc, Color: {self.color}"
+
+hd_motorbike = HarleyDavidson("Street Glide", 1753, "Vivid Black")
+print(hd_motorbike.display_info())  # Output: Harley-Davidson Street Glide - 1753cc, Color: Vivid Black
+```
+
 ## 4. Polymorphism
 
 **Explanation**:  
