@@ -184,6 +184,51 @@ hd_motorbike = HarleyDavidson("Street Glide", 1753, "Vivid Black")
 print(hd_motorbike.display_info())  # Output: Harley-Davidson Street Glide - 1753cc, Color: Vivid Black
 ```
 
+4. **Hierarchical Inheritance**:
+Multiple classes inherit from the same parent class, where more than one derived class are created from a single base. 
+
+**Example**: 
+```python
+class Motorbike:
+    pass
+
+class HarleyDavidson(Motorbike):
+    pass
+
+class Kawasaki(Motorbike):
+    pass
+```
+5. **Hybrid Inheritance**: 
+Inheritance consisting of multiple types of inheritance is called hybrid inheritance.
+
+**Example**:
+```python
+class School:
+    def func1(self):
+        print("This function is in school.")
+
+
+class Student1(School):
+    def func2(self):
+        print("This function is in student 1.")
+
+
+class Student2(School):
+    def func3(self):
+        print("This function is in student 2.")
+
+
+class Student3(Student1, School):
+    def func4(self):
+        print("This function is in student 3.")
+
+
+# Driver's code
+object = Student3()
+object.func1()  # Output: This function is in school.
+object.func2()  # Output: This function is in student 1.
+```
+
 ## 4. Polymorphism
 
 **Explanation**:  
@@ -251,4 +296,4 @@ This example illustrates polymorphism by:
 - Inheritance allows for extending classes.
 - Polymorphism allows for different classes to be treated as instances of the same class.
 
-Reference: Apna College
+References: Apna College, https://www.geeksforgeeks.org/types-of-inheritance-python/ 
