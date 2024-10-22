@@ -201,8 +201,8 @@ This example illustrates polymorphism by:
 - Classes are blueprints for creating objects.
 - Objects are instances of classes.
 - Encapsulation keeps data safe from outside interference.
+- Abstraction hides complex details and exposes only what is necessary.
 - Inheritance allows for extending classes.
 - Polymorphism allows for different classes to be treated as instances of the same class.
-- Abstraction hides complex details and exposes only what is necessary.
 
 Reference: Apna College
