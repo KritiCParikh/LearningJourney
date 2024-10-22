@@ -14,7 +14,8 @@ OOP (Object-Oriented Programming) promotes code reusability, modularity, and sca
 ## 1. Encapsulation
 
 **Explanation**: 
-Encapsulation is the practice of hiding the internal details of a class and providing a public interface to interact with the object. It involves:
+Encapsulation is the practice of hiding the internal details of a class and providing a public interface to interact with the object. A 'capsule' that consists of data and related functions i.e. wrapping data and functions into a single unit (object).
+It involves:
 
 - Making data members private.
 - Providing public methods (getters and setters) to access and modify the data.
@@ -46,7 +47,9 @@ print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Vivid 
 ## 2. Abstraction
 
 **Explanation**:
-Abstraction involves simplifying complex systems by modeling classes based on the essential properties and behaviors. It: 
+Abstraction = Something that is unclear/ abstruse/ obscure
+It involves simplifying complex systems by modeling classes based on the essential properties and behaviors. Hiding the implementation details of a class and only showing the essential features to the user.
+It: 
 
 - Hides complex implementation details
 - Exposes only relevant features of an object
@@ -137,6 +140,7 @@ print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, 
 ## 4. Polymorphism
 
 **Explanation**:  
+"Poly" = Many, "Morphism" = Forms, i.e. Many forms.
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It:
 
 - Enables flexibility in code
