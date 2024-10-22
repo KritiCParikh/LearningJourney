@@ -229,6 +229,33 @@ object.func1()  # Output: This function is in school.
 object.func2()  # Output: This function is in student 1.
 ```
 
+##### Super Constructor
+
+In Python, the `super()` function allows you to call a method from a parent class. It is commonly used in the context of constructors to ensure that the parent class is initialized properly when creating an instance of a subclass. This helps in maintaining the inheritance chain and ensures that all necessary initializations are performed.
+
+#### Key Points:
+- `super()` provides a way to refer to the parent class without explicitly naming it, making your code more maintainable and flexible.
+- It can be used to call methods from a parent class, including the constructor (`__init__` method).
+
+#### Example:
+
+```python
+class Vehicle:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        print(f"Vehicle created: {self.brand} {self.model}")
+
+
+class Car(Vehicle):
+    def __init__(self, brand, model, year):
+        # Call the constructor of the parent class
+        super().__init__(brand, model)
+        self.year = year
+        print(f"Car created: {self.brand} {self.model} {self.year}")
+```
+
+
 ## 4. Polymorphism
 
 **Explanation**:  
