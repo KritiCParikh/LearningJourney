@@ -69,6 +69,102 @@ my_dog = Dog("Buddy", 5)  # Creating an instance with specific values
 print(my_dog.name)  # Output: Buddy
 print(my_dog.age)   # Output: 5
 ```
+# Types of Methods in Python
+
+## 1. Instance Methods
+
+These are the most common type of methods.
+
+- **What they do**: They can access and modify instance attributes (specific to an object).
+- **How they are defined**: Instance methods always take `self` as their first parameter, which refers to the current object.
+
+### Example:
+```python
+class Dog:
+# Instance Method: Can access and modify instance attributes
+    def __init__(self, name, age):
+        self.name = name  # Instance Attribute
+        self.age = age
+
+ # Instance Method: Uses 'self' to refer to the object
+    def speak(self):
+        return f"{self.name} says Woof!"
+```
+
+## 2. Class Methods
+
+These methods are bound to the class, not the instance.
+
+**What they do:** Class methods can access or modify class-level data (shared by all instances of the class). They can also be used as alternative constructors.
+
+**How they are defined:** Class methods take `cls` as their first parameter, which refers to the class itself, not the object. They are created using the `@classmethod` decorator.
+
+**Example:**
+
+```python
+class Dog:
+    species = "Canine"  # Class Attribute
+    
+    @classmethod  # Decorator to define a class method
+    def species_info(cls):
+        return f"All dogs are {cls.species}"
+
+    @classmethod
+    def from_birth_year(cls, name, birth_year):
+        return cls(name, 2024 - birth_year)
+```
+
+## 3. Static Methods
+
+These methods don’t depend on instance or class data.
+
+**What they do:** They are utility methods that don’t modify object or class state. They are used for performing general tasks.
+
+**How they are defined:** Static methods don’t take `self` or `cls` as a parameter and are created using the `@staticmethod` decorator. They don't have access to the class or instance state.
+
+**Example:**
+
+```python
+class MathOperations:
+    @staticmethod
+    def add_numbers(a, b):
+        return a + b
+```
+
+# What is a Decorator?
+
+Decorators allow us to wrap another function in order to extend the behavior of the wrapped function without permanently modifying it. A decorator is a function that takes another function as a parameter and returns a new function, which can add functionality or alter the original behavior. Decorators can be applied to functions, methods, and classes.
+
+## Key Characteristics of Decorators:
+
+### Takes a Function as Input:
+- A decorator is defined as a function that accepts another function (the one you want to decorate) as its parameter. Decorators can also be implemented as classes with a __call__ method.
+
+### Returns a Function:
+- The decorator returns a new function that can include additional functionality or logic, effectively wrapping the original function.
+
+### Higher-Order Functions:
+- Since decorators take functions as arguments and return functions, they are classified as higher-order functions.
+
+### Multiple Decorators:
+- Multiple decorators can be stacked on a single function.
+
+### Preserving Metadata:
+- The functools.wraps decorator can be used to preserve the metadata of the original function.
+
+```python
+def uppercase_decorator(func):
+    def wrapper():
+        result = func()
+        return result.upper()
+    return wrapper
+
+@uppercase_decorator
+def greet():
+    return "hello, world!"
+
+print(greet())  # Output: HELLO, WORLD!
+```
 
 # The `__init__()` Method
 
@@ -156,7 +252,7 @@ print(student1.university_name)  # Output: Texas A&M
 print(student2.university_name)  # Output: University of Texas (still uses the class attribute)
 ```
 
-# Classes and Objects with examples
+# Examples
 
 **Class:** A blueprint for creating objects. It defines properties (attributes) and behaviors (methods).
 
@@ -176,7 +272,7 @@ class Dog:
 my_dog = Dog("Buddy", 5)
 print(my_dog.name)  # Output: Buddy
 ```
-# Real Motorbike Examples
+# Real World Examples: Motorbike
 
 ## Class: Motorbike Company
 
@@ -218,4 +314,4 @@ The `Motorbike` class represents Harley-Davidson, a renowned motorbike company. 
 ### Object as Specific Motorbike Models:
 Each instance of the `Motorbike` class (like `motorbike1` for the Street Glide and `motorbike2` for the Iron 883) represents a specific model produced by Harley-Davidson. Each model has its own unique attributes (e.g., engine capacity and color) while sharing the structure defined by the class.
 
-Reference: https://www.youtube.com/watch?v=q2SGW2VgwAM
+References: https://www.youtube.com/watch?v=q2SGW2VgwAM
