@@ -33,6 +33,35 @@ class Motorbike:
         print(f"{self.model} is stopped")
 
 ```
+# Private Attributes and Methods:
+
+## 1. Definition:
+- **Private Attributes**: Variables defined in a class that are intended to store data but should not be accessed or modified directly from outside the class.
+- **Private Methods**: Functions defined within a class that are used to perform internal operations, meant to be hidden from outside access.
+
+In Python, private attributes and methods are indicated by prefixing their names with an underscore (`_` for protected and `__` for private).
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name               # Public attribute
+        self.__age = age               # Private attribute
+
+    def get_age(self):                 # Public method to access the private attribute
+        return self.__age
+
+    def __private_method(self):        # Private method
+        return "This is a private method"
+
+# Usage example
+person = Person("Alice", 30)
+print(person.name)        # Accessing public attribute, output: Alice
+print(person.get_age())   # Accessing private attribute via public method, output: 30
+
+# Attempt to directly access private attribute or method will raise an error:
+# print(person.__age)      # AttributeError
+# print(person.__private_method())  # AttributeError
+```
+
 # Constructor
 In Python, a class is a blueprint for creating objects, and it can have a special method called a constructor. The constructor is defined by the __init__ method and is automatically called when a new instance (object) of the class is created. This method is used to initialize the object's attributes and set up any necessary state for the object.
 
