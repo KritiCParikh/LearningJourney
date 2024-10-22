@@ -47,7 +47,7 @@ print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Vivid 
 ## 2. Abstraction
 
 **Explanation**:
-Abstraction = Something that is unclear/ abstruse/ obscure
+Abstraction = Something that is unclear/ abstruse/ obscure. 
 It involves simplifying complex systems by modeling classes based on the essential properties and behaviors. Hiding the implementation details of a class and only showing the essential features to the user.
 It: 
 
@@ -88,7 +88,8 @@ print(motorbike1.display_info())  # Output: Street Glide - 1753cc, Color: Midnig
 ## 3. Inheritance
 
 **Explanation**:
-Inheritance allows a class to inherit properties and methods from another class. It:
+Inheritance allows a class to inherit properties and methods from another class. 
+It:
 
 - Enables code reuse
 - Creates class hierarchies
