@@ -54,7 +54,7 @@ class Dog:
 my_dog = Dog()
 print(my_dog.name)  # Output: Unknown
 ```
-## Parameterized Constructor
+## 2. Parameterized Constructor
 - A **parameterized constructor** takes one or more parameters in addition to `self`.
 - This constructor allows you to pass values when creating an instance of the class, enabling the initialization of instance attributes with specific values.
 
