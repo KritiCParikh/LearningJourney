@@ -141,7 +141,7 @@ print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, 
 ## 4. Polymorphism
 
 **Explanation**:  
-"Poly" = Many, "Morphism" = Forms, i.e. Many forms.
+"Poly" = Many, "Morphism" = Forms/ Shapes.
 Polymorphism allows objects of different classes to be treated as objects of a common superclass. It:
 
 - Enables flexibility in code
