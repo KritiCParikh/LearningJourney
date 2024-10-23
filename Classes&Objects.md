@@ -71,7 +71,7 @@ In Python, there are two main types of constructors:
 
 ## 1. Default Constructor
 - A **default constructor** does not take any parameters other than `self`.
-- If you do not define a constructor in your class, Python provides a default constructor automatically.
+- If we do not define a constructor in our class, Python provides a default constructor automatically.
 - This default onstructor does not initialize any instance attributes unless explicitly done inside the constructor body.
 
 ```python
@@ -85,7 +85,7 @@ print(my_dog.name)  # Output: Unknown
 ```
 ## 2. Parameterized Constructor
 - A **parameterized constructor** takes one or more parameters in addition to `self`.
-- This constructor allows you to pass values when creating an instance of the class, enabling the initialization of instance attributes with specific values.
+- This constructor allows us to pass values when creating an instance of the class, enabling the initialization of instance attributes with specific values.
 
 ### Example:
 ```python
@@ -167,7 +167,7 @@ Decorators allow us to wrap another function in order to extend the behavior of 
 ## Key Characteristics of Decorators:
 
 ### Takes a Function as Input:
-- A decorator is defined as a function that accepts another function (the one you want to decorate) as its parameter. Decorators can also be implemented as classes with a __call__ method.
+- A decorator is defined as a function that accepts another function (the one we want to decorate) as its parameter. Decorators can also be implemented as classes with a __call__ method.
 
 ### Returns a Function:
 - The decorator returns a new function that can include additional functionality or logic, effectively wrapping the original function.
@@ -211,7 +211,7 @@ motorbike1 = Motorbike("Yamaha", "MT-07", 2024, "Black")
 
 # Accessing Attributes and Methods
 
-- You can access an object's attributes and methods using the dot (`.`) operator:
+- We can access an object's attributes and methods using the dot (`.`) operator:
 
 ```python
 print(motorbike1.make)  # Output: Yamaha
@@ -220,14 +220,14 @@ motorbike1.stop()        # Output: MT-07 is stopped
 ```
 # Self and Method Calls
 
-- You don’t explicitly pass `self` when calling methods. Python automatically passes the object instance.
+- We don’t explicitly pass `self` when calling methods. Python automatically passes the object instance.
 
 ```python
 motorbike1.drive()  # motorbike1 is passed as self
 ```
 # Creating Multiple Objects
 
-- You can create multiple objects from the same class blueprint.
+- We can create multiple objects from the same class blueprint.
 
 ```python
 motorbike2 = Motorbike("Suzuki", "Hayabusa", 2023, "Silver")
@@ -238,7 +238,7 @@ motorbike2.drive()  # Output: Hayabusa is driving
 
 ### Class Attribute:
 - **Definition**: A class attribute is a variable that is shared across all instances of the class. It is defined within the class but outside any instance methods.
-- **Example**: `company_name` is a class attribute, and all instances of `Motorbike` will have access to this attribute. This means that if you were to change `company_name` to a different value, it would change for all instances.
+- **Example**: `company_name` is a class attribute, and all instances of `Motorbike` will have access to this attribute. This means that if we were to change `company_name` to a different value, it would change for all instances.
 
 ### Instance Attributes:
 - **Definition**: Instance attributes are variables that are specific to each instance of the class. They are defined within the `__init__` method (initializer) and are accessed through the `self` parameter.
