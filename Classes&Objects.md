@@ -195,6 +195,10 @@ def greet():
 print(greet())  # Output: HELLO, WORLD!
 ```
 
+### `@property` Decorator
+
+The `@property` decorator allows us to define methods that can be accessed like attributes. It's useful for controlling access to instance variables, enabling computed properties, and adding validation or logic when attributes are accessed or modified.
+
 # The `__init__()` Method
 
 - `__init__()` is a special method, known as a **constructor**.
