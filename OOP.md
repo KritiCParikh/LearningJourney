@@ -140,7 +140,7 @@ print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, 
 
 ### Types of Inheritance:
 
-1. **Single Inheritance**: 
+a. **Single Inheritance**: 
    A class inherits from a single parent class.
    
    **Example**: 
@@ -148,7 +148,7 @@ print(kawasaki_motorbike.display_info())  # Output: Kawasaki Ninja 650 - 649cc, 
    class HarleyDavidson(Motorbike):
        pass
    ```
-2. **Multiple Inheritance**:  
+b. **Multiple Inheritance**:  
 A class can inherit from more than one parent class.
 
 **Example**:  
@@ -156,7 +156,7 @@ A class can inherit from more than one parent class.
 class HybridBike(Motorbike, ElectricVehicle):
     pass
 ```
-3. **Multilevel Inheritanc**e:  
+c. **Multilevel Inheritanc**e:  
 Multilevel inheritance is a type of inheritance where a class derives from another class, which is itself derived from a further class. This forms a **chain of inheritance**, with properties and methods cascading down through multiple levels of the class hierarchy.
 
 In simpler terms, if Class C inherits from Class B, and Class B inherits from Class A, then Class C indirectly inherits the properties and methods of Class A through Class B.
@@ -184,7 +184,7 @@ hd_motorbike = HarleyDavidson("Street Glide", 1753, "Vivid Black")
 print(hd_motorbike.display_info())  # Output: Harley-Davidson Street Glide - 1753cc, Color: Vivid Black
 ```
 
-4. **Hierarchical Inheritance**:
+d. **Hierarchical Inheritance**:
 Multiple classes inherit from the same parent class, where more than one derived class are created from a single base. 
 
 **Example**: 
@@ -198,7 +198,7 @@ class HarleyDavidson(Motorbike):
 class Kawasaki(Motorbike):
     pass
 ```
-5. **Hybrid Inheritance**: 
+e. **Hybrid Inheritance**: 
 Inheritance consisting of multiple types of inheritance is called hybrid inheritance.
 
 **Example**:
@@ -350,9 +350,25 @@ list2 = [4, 5, 6]
 result = list1 + list2  # result is [1, 2, 3, 4, 5, 6]
 ```
 In each case, the + operator behaves differently based on the data types of its operands. This is an example of operator overloading in Python.
+
 # Operators and Dunder Functions
 
 Python provides special methods, often referred to as "dunder" methods (double underscore), that allow us to define the behavior of operators for custom classes. These methods are called when the corresponding operator is used.
+
+# Common Operators and Their Methods
+
+| Operator | Method                        |
+|----------|-------------------------------|
+| +        | `__add__(self, other)`        |
+| -        | `__sub__(self, other)`        |
+| *        | `__mul__(self, other)`        |
+| /        | `__truediv__(self, other)`    |
+| ==       | `__eq__(self, other)`         |
+| !=       | `__ne__(self, other)`         |
+| <        | `__lt__(self, other)`         |
+| <=       | `__le__(self, other)`         |
+| >        | `__gt__(self, other)`         |
+| >=       | `__ge__(self, other)`         |
 
 ### Example: Complex Numbers
 
