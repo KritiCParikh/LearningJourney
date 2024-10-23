@@ -199,6 +199,64 @@ print(greet())  # Output: HELLO, WORLD!
 
 The `@property` decorator allows us to define methods that can be accessed like attributes. It's useful for controlling access to instance variables, enabling computed properties, and adding validation or logic when attributes are accessed or modified.
 
+# Getters and Setters in Python
+
+In Python, **getters** and **setters** are methods used to control access to class attributes. They allow us to retrieve and update attribute values indirectly, which can help enforce data validation, encapsulation, and more flexible code. Python provides a special way to define getters and setters using the `@property` decorator for getters and `@<attribute>.setter` for setters.
+
+## 1. Getters with `@property` Decorator
+
+A **getter** is a method that allows us to access an attribute's value indirectly. The `@property` decorator turns a method into a getter.
+
+```python
+class Student:
+    def __init__(self, name):
+        self._name = name  # The underscore indicates this is a "private" attribute
+    
+    @property
+    def name(self):
+        return self._name  # Getter to return the name
+
+# Usage
+s = Student("Alice")
+print(s.name)  # Calls the name() method, output: Alice
+```
+In the example:
+
+- `@property` makes the `name` method act like an attribute, allowing us to access `s.name` instead of `s.name()`.
+
+## 2. Setters with `@<attribute>.setter` Decorator
+
+A setter is a method that allows us to update an attribute's value while controlling how the value is set. We can add a setter using the `@<property>.setter` decorator.
+
+```python
+class Student:
+    def __init__(self, name):
+        self._name = name
+    
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, value):
+        if not isinstance(value, str):  # Validation
+            raise ValueError("Name must be a string!")
+        self._name = value  # Setter to update the name
+
+# Usage
+s = Student("Alice")
+s.name = "Bob"  # Calls the setter, changes name to Bob
+print(s.name)  # Output: Bob
+
+# s.name = 123  # This would raise an error: ValueError: Name must be a string!
+```
+In this example:
+
+- `@name.setter` defines a setter for the `name` property.
+- The setter ensures the value assigned to `name` is always a string (validation).
+- Now we can assign a value to `name` directly using `s.name = "Bob"`, which invokes the setter.
+
+
 # The `__init__()` Method
 
 - `__init__()` is a special method, known as a **constructor**.
