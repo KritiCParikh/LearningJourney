@@ -200,62 +200,69 @@ print(greet())  # Output: HELLO, WORLD!
 The `@property` decorator allows us to define methods that can be accessed like attributes. It's useful for controlling access to instance variables, enabling computed properties, and adding validation or logic when attributes are accessed or modified.
 
 # Getters and Setters in Python
+In Python, getters and setters are methods used to access and modify attributes in a class:
 
-In Python, **getters** and **setters** are methods used to control access to class attributes. They allow us to retrieve and update attribute values indirectly, which can help enforce data validation, encapsulation, and more flexible code. Python provides a special way to define getters and setters using the `@property` decorator for getters and `@<attribute>.setter` for setters.
+### Getters
+Getters are methods that return the value of an instance variable. They provide access to private attributes in a class while maintaining encapsulation.
 
-## 1. Getters with `@property` Decorator
+### Setters
+Setters are methods that set or update the value of an instance variable. They allow controlled modification of private attributes in a class.
 
-A **getter** is a method that allows us to access an attribute's value indirectly. The `@property` decorator turns a method into a getter.
+### Note
+Getters and setters are also known as accessors and mutators, respectively. They are often used together to protect data and control access to class attributes, ensuring that any changes to the attributes are done in a safe and predictable manner.
 
-```python
-class Student:
-    def __init__(self, name):
-        self._name = name  # The underscore indicates this is a "private" attribute
-    
-    @property
-    def name(self):
-        return self._name  # Getter to return the name
-
-# Usage
-s = Student("Alice")
-print(s.name)  # Calls the name() method, output: Alice
-```
-In the example:
-
-- `@property` makes the `name` method act like an attribute, allowing us to access `s.name` instead of `s.name()`.
-
-## 2. Setters with `@<attribute>.setter` Decorator
-
-A setter is a method that allows us to update an attribute's value while controlling how the value is set. We can add a setter using the `@<property>.setter` decorator.
+## Motorbike Class with Getters and Setters
 
 ```python
-class Student:
-    def __init__(self, name):
-        self._name = name
-    
+class Motorbike:
+    def __init__(self, model, engine_size):
+        self._model = model               # Private attribute for model
+        self._engine_size = engine_size   # Private attribute for engine size
+        self._fuel_level = 0              # Private attribute for fuel level
+
     @property
-    def name(self):
-        return self._name
-    
-    @name.setter
-    def name(self, value):
-        if not isinstance(value, str):  # Validation
-            raise ValueError("Name must be a string!")
-        self._name = value  # Setter to update the name
+    def model(self):
+        """Getter for the model attribute."""
+        return self._model
 
-# Usage
-s = Student("Alice")
-s.name = "Bob"  # Calls the setter, changes name to Bob
-print(s.name)  # Output: Bob
+    @property
+    def engine_size(self):
+        """Getter for the engine size attribute."""
+        return self._engine_size
 
-# s.name = 123  # This would raise an error: ValueError: Name must be a string!
+    @property
+    def fuel_level(self):
+        """Getter for the fuel level attribute."""
+        return self._fuel_level
+
+    @fuel_level.setter
+    def fuel_level(self, value):
+        """Setter for the fuel level attribute with validation."""
+        if value < 0:
+            raise ValueError("Fuel level cannot be negative!")
+        self._fuel_level = value  # Update the fuel level
 ```
-In this example:
+## Usage
+```python
+bike = Motorbike("Yamaha R3", 321)
 
-- `@name.setter` defines a setter for the `name` property.
-- The setter ensures the value assigned to `name` is always a string (validation).
-- Now we can assign a value to `name` directly using `s.name = "Bob"`, which invokes the setter.
+# Accessing values using getters
+print(f"Model: {bike.model}")                # Output: Model: Yamaha R3
+print(f"Engine Size: {bike.engine_size} cc") # Output: Engine Size: 321 cc
+print(f"Initial Fuel Level: {bike.fuel_level} liters")  # Output: Initial Fuel Level: 0 liters
 
+# Updating fuel level using the setter
+bike.fuel_level = 10                     # Sets fuel level to 10 liters
+print(f"Updated Fuel Level: {bike.fuel_level} liters")  # Output: Updated Fuel Level: 10 liters
+
+# Attempting to set a negative fuel level
+# bike.fuel_level = -5                    # Uncommenting this will raise an error
+```
+## Key Points
+
+- **Encapsulation:** Getters and setters allow you to control how attributes are accessed and modified, helping maintain data integrity.
+- **Validation:** Setters can include validation logic to enforce rules about what values can be assigned to attributes.
+- **Ease of Maintenance:** If the internal representation of an attribute changes, you can update the getter or setter without affecting external code.
 
 # The `__init__()` Method
 
