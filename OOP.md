@@ -24,9 +24,9 @@ It involves:
 It include improved security, data hiding, and modularity.
 
 **Real World Explanation**: 
-Think of encapsulation as putting your motorbike’s engine, wheels, and seat inside a protective cover. You can ride the bike without needing to know how each part works. Encapsulation keeps the details hidden and only allows you to interact with what you need.
+Think of encapsulation as putting the motorbike’s engine, wheels, and seat inside a protective cover. We can ride the bike without needing to know how each part works. Encapsulation keeps the details hidden and only allows us to interact with what we need.
 
-**Example**: In the `Motorbike` class, attributes like `model`, `engine_capacity`, and `color` are kept private. This means you can't change them directly from outside the class. Instead, you use methods (like `display_info()`) to interact with them.
+**Example**: In the `Motorbike` class, attributes like `model`, `engine_capacity`, and `color` are kept private. This means we can't change them directly from outside the class. Instead, we use methods (like `display_info()`) to interact with them.
 
 ```python
 class Motorbike:
@@ -57,7 +57,7 @@ It:
 - Abstraction is often implemented using abstract classes and interfaces
 
 **Real World Explanation**:
-Abstraction is like a car's dashboard. You see the speedometer, fuel gauge, and buttons, but you don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
+Abstraction is like a car's dashboard. We see the speedometer, fuel gauge, and buttons, but we don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
 
 **Example**: In our motorbike example, we can change the color of the motorbike without knowing the details of how that change is managed. The `set_color()` method allows us to interact with the bike without worrying about its internal workings.
 
@@ -98,7 +98,7 @@ It:
 A class that inherits is called a **subclass** or **child class**, while the class being inherited from is the **superclass** or **parent class**.
 
 **Real World Explanation**:
-Inheritance is like a family tree. Just as children inherit traits from their parents, classes can inherit properties and behaviors from other classes. This saves time because you don’t have to rewrite the same code.
+Inheritance is like a family tree. Just as children inherit traits from their parents, classes can inherit properties and behaviors from other classes. This saves time because we don’t have to rewrite the same code.
 
 **Example**: In our motorbike example, the `HarleyDavidson` and `Kawasaki` classes inherit from the `Motorbike` class. They get all the basic features of a motorbike and can add their specific details.
 
@@ -231,10 +231,10 @@ object.func2()  # Output: This function is in student 1.
 
 ##### Super Constructor
 
-In Python, the `super()` function allows you to call a method from a parent class. It is commonly used in the context of constructors to ensure that the parent class is initialized properly when creating an instance of a subclass. This helps in maintaining the inheritance chain and ensures that all necessary initializations are performed.
+In Python, the `super()` function allows us to call a method from a parent class. It is commonly used in the context of constructors to ensure that the parent class is initialized properly when creating an instance of a subclass. This helps in maintaining the inheritance chain and ensures that all necessary initializations are performed.
 
 #### Key Points:
-- `super()` provides a way to refer to the parent class without explicitly naming it, making your code more maintainable and flexible.
+- `super()` provides a way to refer to the parent class without explicitly naming it, making our code more maintainable and flexible.
 - It can be used to call methods from a parent class, including the constructor (`__init__` method).
 
 #### Example:
