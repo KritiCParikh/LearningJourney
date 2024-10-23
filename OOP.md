@@ -314,6 +314,75 @@ This example illustrates polymorphism by:
 - **Calling the same method** `display_info()` on different objects (`HarleyDavidson` and `Kawasaki`).
 - **Showing how the same method call** produces different outputs based on the specific object type.
 
+# Operator Overloading
+
+Operator overloading is a specific type of polymorphism that allows us to define custom behavior for operators (like +, -, *, etc.) when they are applied to instances of user-defined classes. This enables the same operator to have different meanings depending on the context.
+
+## Operator Overloading with the + Operator
+
+The behavior of the + operator can differ based on the types of the operands involved:
+
+#### Numbers:
+For numeric types (integers, floats), the + operator performs arithmetic addition.
+
+```python
+a = 5
+b = 10
+result = a + b  # result is 15
+```
+#### Strings
+
+For strings, the + operator concatenates them.
+
+```python
+str1 = "Hello, "
+str2 = "World!"
+result = str1 + str2  # result is "Hello, World!"
+```
+
+#### Lists
+
+For lists, the + operator combines two lists.
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+result = list1 + list2  # result is [1, 2, 3, 4, 5, 6]
+```
+In each case, the + operator behaves differently based on the data types of its operands. This is an example of operator overloading in Python.
+# Operators and Dunder Functions
+
+Python provides special methods, often referred to as "dunder" methods (double underscore), that allow us to define the behavior of operators for custom classes. These methods are called when the corresponding operator is used.
+
+### Example: Complex Numbers
+
+Python does not have a built-in class for complex numbers in the way that allows us to overload operators directly. Therefore, we can create a custom `Complex` class to represent complex numbers and implement operator overloading for them.
+
+```python
+class Complex:
+    def __init__(self, real, img):
+        self.real = real
+        self.img = img
+
+    def showNumber(self):
+        print(self.real, "i +", self.img, "j")
+
+    def __add__(self, num2):
+        newReal = self.real + num2.real
+        newImg = self.img + num2.img
+        return Complex(newReal, newImg)
+
+# Example Usage
+num1 = Complex(2, 4)
+num1.showNumber()  # Output: 2 i + 4 j
+
+num2 = Complex(3, 5)
+num2.showNumber()  # Output: 3 i + 5 j
+
+num3 = num1 + num2  # Calls num1.__add__(num2)
+num3.showNumber()  # Output: 5 i + 9 j
+```
+
 ## Summary
 
 - Classes are blueprints for creating objects.
