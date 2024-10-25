@@ -40,31 +40,31 @@ Non-primitive data types are more complex structures created by combining multip
 ## (i) Linear Data Structures
 Linear data structures organize data in a sequential manner, where each element is connected to its previous and next element. This means that elements are stored in a single level or line.
 
+### a. **Tuple**
+- **Definition**: An ordered and immutable collection of items, meaning you can't modify the items after creating it.
+- **Real-Life Example**: Coordinates of a location. For example, `(40.7128, -74.0060)` for New York City is a fixed pair of latitude and longitude values.
+
 ### A. Static Data Structures
 Static data structures have a fixed size and memory allocation that does not change during execution.
 
-a. **Array**
+c. **Array**
 - **Definition**: A collection of elements, typically of the same data type, stored at contiguous memory locations.
 - **Real-Life Example**: Seats in a row of a movie theater. All seats are placed in a fixed, ordered sequence. Arrays are used less in Python compared to lists.
 
 ### B. Dynamic Data Structures
 Dynamic data structures allow for flexible memory allocation, enabling the size to change during program execution.
 
-b. **List**
+c. **List**
 - **Definition**: An ordered and mutable collection of items that can hold any data type.
 - **Real-Life Example**: A grocery shopping list. You have a list of items you plan to buy, like `[milk, eggs, bread]`, and you can add/remove items as you shop.
 
-c. **Stack**
+d. **Stack**
 - **Definition**: A collection of elements that follows the Last-In-First-Out (LIFO) principle.
 - **Real-Life Example**: A stack of plates. The last plate you place on the stack is the first one you'll take off.
 
-d. **Queue**
+e. **Queue**
 - **Definition**: A collection of elements that follows the First-In-First-Out (FIFO) principle.
 - **Real-Life Example**: A queue at a ticket counter. The first person in line is the first person served.
-
-### e. **Tuple**
-- **Definition**: An ordered and immutable collection of items, meaning you can't modify the items after creating it.
-- **Real-Life Example**: Coordinates of a location. For example, `(40.7128, -74.0060)` for New York City is a fixed pair of latitude and longitude values.
 
 ## (ii) Non-Linear Data Structures
 Non-linear data structures organize data in a hierarchical or interconnected manner, where each element can have multiple relationships with other elements. This allows for a more complex arrangement than a linear sequence.
