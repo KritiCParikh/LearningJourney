@@ -408,6 +408,6 @@ num3.showNumber()  # Output: 5 i + 9 j
 - Inheritance allows for extending classes.
 - Polymorphism allows for different classes to be treated as instances of the same class.
 
-![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/1.png)
+![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/1_.png)
 
 References: Apna College, https://www.geeksforgeeks.org/types-of-inheritance-python/, https://www.youtube.com/watch?v=Ei2zOVYIyKE 
