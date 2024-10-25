@@ -1,6 +1,6 @@
 **Data Structure (DS)** refers to the way we store and organize data in a computer so that it can be used effectively. It is crucial for efficiently processing, retrieving, and storing data. Understanding data structures is fundamental to improving the performance of software applications and solving problems more effectively
 
-### Example: Motorcycles and Route Optimization
+#### Example: Motorcycles and Route Optimization
 - **Data Structure:** Graphs  
   Example: When planning a motorcycle trip, a graph can represent various routes where nodes are locations and edges are roads with associated distances or travel times.  
 - **Algorithm:** Dijkstra’s Algorithm  
