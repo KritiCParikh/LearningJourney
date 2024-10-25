@@ -41,7 +41,7 @@ Non-primitive data types are more complex structures created by combining multip
 ## (i) Linear Data Structures
 Linear data structures organize data in a sequential manner, where each element is connected to its previous and next element. This means that elements are stored in a single level or line.
 
-### a. **Tuple**
+a. **Tuple**
 - **Definition**: An ordered and immutable collection of items, meaning you can't modify the items after creating it.
 - **Real-Life Example**: Coordinates of a location. For example, `(40.7128, -74.0060)` for New York City is a fixed pair of latitude and longitude values.
 
