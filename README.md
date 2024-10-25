@@ -1,5 +1,9 @@
 Welcome to my **Learning Journey**! This repository contains resources, notes, and insights gained throughout my exploration of various computer science concepts, including but not limited to:
 
+- Algorithms
+- Data Structures
+- Object-Oriented Programming (OOP)
+
 ## Tips for Problem-Solving in Data Structures and Algorithms (DSA)
 
 Here are some tips for approaching problem-solving in Data Structures and Algorithms (DSA):
