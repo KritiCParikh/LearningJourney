@@ -13,6 +13,6 @@
 | **Definition:** A data type is a classification that specifies which type of value a variable can hold and what operations can be performed on it. | **Definition:** A data structure is a way of organizing and storing data in a computer to enable efficient access and modification. |
 | **Example:** <br> Integer (int): Represents whole numbers. <br> `age = 25  # age is an integer`                                            | **Example:** <br> Array: A collection of elements identified by an index. <br> `numbers = [1, 2, 3, 4, 5]  # 'numbers' is an array of integers` |
 
-
+![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/2.png)
 
 References: https://www.youtube.com/watch?v=bum_19loj9A, 
