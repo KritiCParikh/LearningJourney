@@ -37,7 +37,7 @@ Primitive data types are the most basic data types provided by a programming lan
 ## 2.  Non-Primitive (Derived) Data Types
 Non-primitive data types are more complex structures created by combining multiple primitive data types. They are typically not defined by the programming language itself but by the programmer, and they allow for the organization of multiple values.
 
-(i) ###Linear Data Structures
+## (i) Linear Data Structures
 Linear data structures organize data in a sequential manner, where each element is connected to its previous and next element. This means that elements are stored in a single level or line.
 
 a. **List**
