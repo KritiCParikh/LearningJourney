@@ -24,7 +24,7 @@ It involves:
 It include improved security, data hiding, and modularity.
 
 **Real World Explanation**: 
-Think of encapsulation as putting the motorbike’s engine, wheels, and seat inside a protective cover. We can ride the bike without needing to know how each part works. Encapsulation keeps the details hidden and only allows us to interact with what we need.
+Encapsulation is like a car's engine compartment. The complex components (engine, battery, fluids) are bundled together and hidden under the hood. We interact with these components through controlled interfaces (ignition, gas pedal, dashboard indicators) without directly accessing the internals.
 
 **Example**: In the `Motorbike` class, attributes like `model`, `engine_capacity`, and `color` are kept private. This means we can't change them directly from outside the class. Instead, we use methods (like `display_info()`) to interact with them.
 
@@ -57,7 +57,7 @@ It:
 - Abstraction is often implemented using abstract classes and interfaces
 
 **Real World Explanation**:
-Abstraction is like a car's dashboard. We see the speedometer, fuel gauge, and buttons, but we don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials.
+Abstraction is like a car's dashboard. We see the speedometer, fuel gauge, and buttons, but we don’t need to know how the engine works. Abstraction simplifies complex systems by showing only the essentials. Also, Abstraction is like using a smartphone's camera app. We press a button to take a photo, and the app handles all the complex processes (focusing, adjusting exposure, processing the image) without we needing to know the details of how these processes work.
 
 **Example**: In our motorbike example, we can change the color of the motorbike without knowing the details of how that change is managed. The `set_color()` method allows us to interact with the bike without worrying about its internal workings.
 
