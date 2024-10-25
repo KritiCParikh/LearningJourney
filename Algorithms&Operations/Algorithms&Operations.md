@@ -38,7 +38,7 @@ Algorithms are precise, unambiguous sequences of instructions designed to solve 
    - Oil Change (due at 9000 miles)
    - Tire Inspection (due at 10000 miles)
 4. Notify owner: "Next maintenance due is an oil change at 9000 miles."
-
+```
 ##### Summary
 
 In this example, the data structure (Maintenance Log) organizes important maintenance records, while the algorithm provides a systematic way to manage and schedule motorcycle maintenance based on usage. This approach helps ensure that the motorcycle remains in optimal condition, enhancing its performance and longevity.
