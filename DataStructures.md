@@ -111,6 +111,7 @@ f. **Hash Table**
 | Primitive | Float | Decimal numbers | Weight measurement | - |
 | Primitive | String | Sequence of characters | Full name | - |
 | Primitive | Boolean | True/False values | Light switch state | - |
+| Linear    | Tuple | Ordered and immutable collection | Coordinates of a location | - |
 | Linear (Static) | Array | Fixed-size collection | Movie theater seats | - |
 | Linear (Dynamic) | List | Mutable ordered collection | Shopping list | - |
 | Linear (Dynamic) | Linked List | Nodes with data and references | Treasure hunt clues | Singly, Doubly, Circular |
