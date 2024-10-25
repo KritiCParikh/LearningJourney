@@ -62,7 +62,7 @@ d. **Queue**
 - **Definition**: A collection of elements that follows the First-In-First-Out (FIFO) principle.
 - **Real-Life Example**: A queue at a ticket counter. The first person in line is the first person served.
 
-e. **Tuple**
+### e. **Tuple**
 - **Definition**: An ordered and immutable collection of items, meaning you can't modify the items after creating it.
 - **Real-Life Example**: Coordinates of a location. For example, `(40.7128, -74.0060)` for New York City is a fixed pair of latitude and longitude values.
 
