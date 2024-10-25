@@ -15,7 +15,7 @@
 
 ![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/2.png)
 
-1. ##Primitive Data Types
+## 1. Primitive Data Types
 Primitive data types are the most basic data types provided by a programming language. They are typically pre-defined and directly supported by the system, meaning they store a single value and cannot be decomposed into simpler elements.
 
    a. **Integer**  
@@ -34,7 +34,7 @@ Primitive data types are the most basic data types provided by a programming lan
       - **Definition:** A data type that can hold one of two values: True or False.  
       - **Real-Life Example:** A light switch can either be ON (True) or OFF (False).
   
-2.  ##Non-Primitive (Derived) Data Types
+## 2.  Non-Primitive (Derived) Data Types
 Non-primitive data types are more complex structures created by combining multiple primitive data types. They are typically not defined by the programming language itself but by the programmer, and they allow for the organization of multiple values.
 
 (i) ###Linear Data Structures
@@ -60,7 +60,7 @@ e. **Queue**
 - **Definition**: A collection of elements that follows the First-In-First-Out (FIFO) principle.
 - **Real-Life Example**: A queue at a ticket counter. The first person in line is the first person served.
 
-(ii) ###Non-Linear Data Structure
+## (ii) Non-Linear Data Structure
 Non-linear data structures organize data in a hierarchical or interconnected manner, where each element can have multiple relationships with other elements. This allows for a more complex arrangement than a linear sequence.
 
 a. **Set**
