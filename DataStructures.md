@@ -15,7 +15,7 @@
 
 ![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/2.png)
 
-1. **Primitive Data Types**
+1. ##Primitive Data Types
 Primitive data types are the most basic data types provided by a programming language. They are typically pre-defined and directly supported by the system, meaning they store a single value and cannot be decomposed into simpler elements.
 
    a. **Integer**  
@@ -34,48 +34,48 @@ Primitive data types are the most basic data types provided by a programming lan
       - **Definition:** A data type that can hold one of two values: True or False.  
       - **Real-Life Example:** A light switch can either be ON (True) or OFF (False).
   
-2.  **Non-Primitive (Derived) Data Types**
+2.  ##Non-Primitive (Derived) Data Types
 Non-primitive data types are more complex structures created by combining multiple primitive data types. They are typically not defined by the programming language itself but by the programmer, and they allow for the organization of multiple values.
 
-(i) **Linear Data Structures**
+(i) ###Linear Data Structures
 Linear data structures organize data in a sequential manner, where each element is connected to its previous and next element. This means that elements are stored in a single level or line.
 
-### a. List
+a. **List**
 - **Definition**: An ordered and mutable collection of items that can hold any data type.
 - **Real-Life Example**: A grocery shopping list. You have a list of items you plan to buy, like `[milk, eggs, bread]`, and you can add/remove items as you shop.
 
-### b. Tuple
+b. **Tuple**
 - **Definition**: An ordered and immutable collection of items, meaning you can't modify the items after creating it.
 - **Real-Life Example**: Coordinates of a location. For example, `(40.7128, -74.0060)` for New York City is a fixed pair of latitude and longitude values.
 
-### c. Array
+c. **Array**
 - **Definition**: A collection of elements, typically of the same data type, stored at contiguous memory locations.
 - **Real-Life Example**: Seats in a row of a movie theater. All seats are placed in a fixed, ordered sequence. Arrays are used less in Python compared to lists.
 
-### d. Stack
+d. **Stack**
 - **Definition**: A collection of elements that follows the Last-In-First-Out (LIFO) principle.
 - **Real-Life Example**: A stack of plates. The last plate you place on the stack is the first one you'll take off.
 
-### e. Queue
+e. **Queue**
 - **Definition**: A collection of elements that follows the First-In-First-Out (FIFO) principle.
 - **Real-Life Example**: A queue at a ticket counter. The first person in line is the first person served.
 
-(ii) **Non-Linear Data Structure**
+(ii) ###Non-Linear Data Structure
 Non-linear data structures organize data in a hierarchical or interconnected manner, where each element can have multiple relationships with other elements. This allows for a more complex arrangement than a linear sequence.
 
-### a. Set
+a. **Set**
 - **Definition**: An unordered collection of unique elements, where no duplicates are allowed.
 - **Real-Life Example**: Collection of unique stamps. You can’t have two of the same stamp in your collection.
 
-### b. Dictionary
+b. **Dictionary**
 - **Definition**: A collection of key-value pairs, where each key maps to a specific value.
 - **Real-Life Example**: A dictionary of words and definitions. The word (key) maps to its meaning (value), just like `{"apple": "a fruit", "car": "a vehicle"}`.
 
-### c. Graph
+c. **Graph**
 - **Definition**: A set of nodes connected by edges, used to represent relationships between elements.
 - **Real-Life Example**: A social network. Each person is a node, and friendships or connections are edges linking them to other people.
 
-### d. Tree
+d. **Tree**
 - **Definition**: A hierarchical data structure with a root value and sub-nodes that form a branching structure.
 - **Real-Life Example**: A family tree. The root (ancestor) branches out to children (descendants), forming hierarchical layers.
 
