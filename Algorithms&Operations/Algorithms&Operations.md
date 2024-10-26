@@ -82,17 +82,17 @@ Asymptotic analysis refers to the mathematical method of describing the limiting
 ### Notations
 
 #### Big O (O) - Upper Bound
-- **Definition:** Represents the worst-case scenario or upper bound of an algorithm's growth rate.
+Represents the worst-case scenario or upper bound of an algorithm's growth rate.
 - **Purpose:** Most commonly used in practice for analyzing algorithms. This notation helps identify the maximum time the algorithm might need for a given input size.
 - **Example:** `O(n)` means the algorithm's time complexity grows at most linearly with input size.
 
 #### Big Theta (Θ) - Tight Bound
-- **Definition:** Represents both the upper and lower bounds of an algorithm's growth rate.
+Represents both the upper and lower bounds of an algorithm's growth rate.
 - **Purpose:** Describes the average-case or exact behavior of an algorithm. This is often less emphasized but useful when an average scenario is meaningful.
 - **Example:** `Θ(n)` means the algorithm's time complexity grows exactly linearly with input size.
 
 #### Big Omega (Ω) - Lower Bound
-- **Definition:** Represents the best-case scenario or lower bound of an algorithm's growth rate.
+Represents the best-case scenario or lower bound of an algorithm's growth rate.
 - **Purpose:** Less commonly used in practical analysis, but it helps understand the minimum time an algorithm will take.
 - **Example:** `Ω(n)` means the algorithm's time complexity grows at least linearly with input size.
 
@@ -137,31 +137,31 @@ Imagine we're planning a road trip from New York to Los Angeles:
 Big O Notation is the standard way to express algorithm complexity. It describes the upper bound of an algorithm's growth rate. Common notations include:
 
 ### O(1): Constant Time
-- **Definition:** The algorithm's execution time remains constant regardless of the input size.
+The algorithm's execution time remains constant regardless of the input size.
 - **Real-world example:** Checking if a light switch is on or off. No matter how big our house is (input size), it takes the same amount of time to check a single switch.
 
 ### O(log n): Logarithmic Time
-- **Definition:** The algorithm's execution time increases logarithmically as the input size grows.
+The algorithm's execution time increases logarithmically as the input size grows.
 - **Real-world example:** Finding a word in a dictionary. w can use a binary search approach, halving the section we're looking in each time, which is much faster than checking every page.
 
 ### O(n): Linear Time
-- **Definition:** The algorithm's execution time increases linearly with the input size.
+The algorithm's execution time increases linearly with the input size.
 - **Real-world example:** Reading a book. The time it takes to read a book is directly proportional to the number of pages (input size).
 
 ### O(n log n): Linearithmic Time
-- **Definition:** The algorithm's execution time is a product of linear and logarithmic factors.
+The algorithm's execution time is a product of linear and logarithmic factors.
 - **Real-world example:** Sorting a deck of cards using an efficient method like merge sort. We divide the deck into smaller piles (logarithmic) and then compare and merge them (linear).
 
 ### O(n²): Quadratic Time
-- **Definition:** The algorithm's execution time is proportional to the square of the input size.
+The algorithm's execution time is proportional to the square of the input size.
 - **Real-world example:** Checking every pair of socks in a drawer to find matching pairs. If we have *n* socks, we need to compare each sock with every other sock, resulting in *n²* comparisons.
 
 ### O(2ⁿ): Exponential Time
-- **Definition:** The algorithm's execution time doubles with each additional input element.
+The algorithm's execution time doubles with each additional input element.
 - **Real-world example:** Trying to crack a password by brute force. Each additional character in the password doubles the number of possible combinations to check.
 
 ### O(n!): Factorial Time
-- **Definition:** The algorithm's execution time grows factorially with the input size.
+The algorithm's execution time grows factorially with the input size.
 - **Real-world example:** Solving the traveling salesman problem by checking every possible route. For *n* cities, there are *n!* possible routes to consider, which grows extremely quickly as *n* increases.
 
 ## Alternative Big O Notation Meme
@@ -198,7 +198,7 @@ These time complexities represent the average or typical case for each operation
 
 
 ## Space Complexity
-** Space complexity is the amount of memory space required by an algorithm to solve a computational problem, expressed as a function of the input size.
+Space complexity is the amount of memory space required by an algorithm to solve a computational problem, expressed as a function of the input size.
 
 ### Example
 Think of packing for a trip. If we need an outfit for every possible activity, our luggage quickly fills up (high space complexity). If we can reuse outfits (low space complexity), we pack more efficiently.
@@ -249,7 +249,7 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 ## A. General Algorithmic Techniques
 
 ### 1. Brute Force
-**Definition:** A straightforward method of solving problems by checking all possible solutions until the correct one is found.
+A straightforward method of solving problems by checking all possible solutions until the correct one is found.
 
 **Example:**
 - a. Finding a lost key by systematically searching every room in the house, checking under every cushion and in every drawer until it's found.
@@ -262,7 +262,7 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 
 
 ### 2. Divide and Conquer
-**Definition:** Breaking down a large problem into smaller sub-problems, solving them independently, and combining the results.
+Breaking down a large problem into smaller sub-problems, solving them independently, and combining the results.
 
 **Example:**
 - a. Organizing a large community cleanup. We divide the town into sectors, assign teams to clean each sector independently, and then combine their efforts for a clean town.
@@ -275,7 +275,7 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Strassen's Matrix Multiplication:** Efficiently multiplying large matrices by breaking them into sub-matrices.
 
 ### 3. Dynamic Programming (DP)
-**Definition:** Breaking down a problem into overlapping sub-problems and solving each just once, storing the results for future use.
+Breaking down a problem into overlapping sub-problems and solving each just once, storing the results for future use.
 
 **Example:**
 - a. Planning the most scenic route for a road trip. We calculate the best routes between major cities once, then use these calculations to determine the best overall route, avoiding recalculating the same city-to-city routes multiple times.
@@ -285,10 +285,8 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Top-down (Memoization):** Solving the problem recursively and caching the results.
 - **Bottom-up (Tabulation):** Solving the problem iteratively by building up from the base case.
 
----
-
 ### 4. Greedy Approach
-**Definition:** Making the best immediate choice at each step, hoping to reach the global optimal solution at the end.
+Making the best immediate choice at each step, hoping to reach the global optimal solution at the end.
 
 **Example:** Filling a piggy bank with coins, always choosing to put in the highest value coin that will fit, to maximize the total amount saved.
 
@@ -298,10 +296,9 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Dijkstra's Algorithm:** Finding the shortest path in a weighted graph.
 - **Kruskal's Algorithm:** Finding a minimum spanning tree for a weighted graph.
 
----
 
 ### 5. Backtracking
-**Definition:** A technique for solving problems incrementally, trying partial solutions and abandoning them if they do not lead to a valid solution.
+A technique for solving problems incrementally, trying partial solutions and abandoning them if they do not lead to a valid solution.
 
 **Example:** Solving a crossword puzzle by filling in words, erasing and trying new words when we reach a point where no word fits.
 
@@ -311,10 +308,8 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Sudoku Solver:** Filling a 9×9 grid with digits so each column, row, and 3×3 section contain all digits from 1 to 9.
 - **Hamiltonian Cycle Problem:** Finding a cycle that visits every vertex exactly once in a graph.
 
----
-
 ### 6. Branch and Bound
-**Definition:** A method for solving optimization problems by dividing the search space into smaller sections and using bounds to eliminate regions from consideration.
+A method for solving optimization problems by dividing the search space into smaller sections and using bounds to eliminate regions from consideration.
 
 **Example:** House hunting within a budget. We divide the city into neighborhoods, set price limits, and eliminate entire areas that are over our budget without visiting every single house.
 
@@ -323,10 +318,9 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **0/1 Knapsack Problem:** Selecting items to maximize value while staying within a weight limit.
 - **Job Assignment Problem:** Assigning jobs to workers to minimize total cost.
 
----
 
 ### 7. Recursion
-**Definition:** A method where a function calls itself to solve smaller instances of the same problem, often with a base case to stop the recursion.
+A method where a function calls itself to solve smaller instances of the same problem, often with a base case to stop the recursion.
 
 **Example:** Understanding a family tree. To know about our ancestors, we ask our parents about their parents, who in turn asked their parents, and so on, until we reach someone who doesn't know their parents' history.
 
@@ -336,10 +330,9 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Binary Recursion:** A function calls itself twice in its body.
 - **Nested Recursion:** A function passes the result of a recursive call as an argument to another recursive call.
 
----
 
 ### 8. Heuristic Approaches
-**Definition:** Techniques designed for solving problems faster when classic methods are too slow, often using rule-of-thumb strategies.
+Techniques designed for solving problems faster when classic methods are too slow, often using rule-of-thumb strategies.
 
 **Example:** Choosing a restaurant in a new city. Instead of trying every restaurant, we might use heuristics like "busy restaurants are usually good" or "places with good online reviews are worth trying."
 
@@ -349,10 +342,8 @@ Think of packing for a trip. If we need an outfit for every possible activity, o
 - **Genetic Algorithms:** Evolving a population of solutions using principles inspired by natural selection.
 - **A* Search Algorithm:** Finding the shortest path using an estimate of the remaining distance.
 
----
-
 ### 9. Randomized Algorithms
-**Definition:** Uses randomness to make decisions, often leading to faster average-case performance.
+Uses randomness to make decisions, often leading to faster average-case performance.
 
 **Example:** Conducting a political poll. Instead of asking every citizen, we randomly select a smaller group to survey, which can provide a good estimate of overall opinion.
 
