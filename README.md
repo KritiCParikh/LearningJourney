@@ -8,47 +8,49 @@ Welcome to my **Learning Journey**! This repository contains resources, notes, a
 
 Here are some tips for approaching problem-solving in Data Structures and Algorithms (DSA):
 
-1. **Understand the Problem**
-   - **Read Carefully**: Start by thoroughly reading the problem statement to understand what is being asked.
-   - **Identify Inputs and Outputs**: Clearly define what inputs are provided and what the expected outputs are.
-   - **Clarify Constraints**: Note any constraints or limits, as these can influence the approach.
+# Step 1: Understand the Problem
+- **State the Problem Clearly**: Begin by articulating the problem in your own words. This ensures you've grasped the core challenge.
+- **Read Carefully**: Thoroughly read the problem statement to understand what is being asked.
+- **Identify Inputs and Outputs**: Clearly define what inputs are provided and what the expected outputs are.
+- **Clarify Constraints**: Note any constraints or limits, as these can influence the approach.
 
-2. **Break Down the Problem**
-   - **Decompose**: Break the problem into smaller, manageable parts. This can make it easier to tackle complex problems.
-   - **Identify Patterns**: Look for patterns or similarities with problems we've solved before. Recognizing these can provide insights into potential solutions.
+# Step 2: Identify Function Signature and Requirements
+- **Define Function Signature**: Determine the input parameters and return type of the function you'll be implementing.
+- **Analyze Requirements**: Assess which operations (e.g., searching, sorting, insertion, deletion) are crucial for solving the problem.
+- **Consider Complexity Constraints**: Evaluate any time or space complexity requirements mentioned in the problem statement.
 
-3. **Choose the Right Data Structures**
-   - **Analyze Requirements**: Determine which data structures best fit the needs of the problem based on the operations required (e.g., searching, sorting, insertion, deletion).
-   - **Consider Complexity**: Evaluate the time and space complexity of different data structures to choose the most efficient one for our problem.
+# Step 3: Create Test Cases and List Edge Cases
+- **Understand Given Test Cases**: Carefully examine the provided test cases to gain insights into the problem's nuances.
+- **Create Additional Test Cases**: Develop your own test cases, including edge cases and corner cases.
+- **Use Edge Cases**: Consider boundary conditions, empty inputs, maximum limits, and other special scenarios.
 
-4. **Outline the Algorithm**
-   - **Create a Plan**: Draft a high-level outline of our solution before coding. This could be pseudocode or flowcharts.
-   - **Step-by-Step Approach**: Ensure each step logically follows from the previous one. This helps in debugging later.
+# Step 4: Outline the Solution in Plain English
+- **Break Down the Problem**: Decompose the problem into smaller, manageable parts.
+- **Identify Patterns**: Look for similarities with problems you've solved before.
+- **Create a Plan**: Draft a high-level outline of your solution before coding. This could be pseudocode or flowcharts.
+- **Step-by-Step Approach**: Ensure each step logically follows from the previous one.
 
-5. **Implement the Solution**
-   - **Code Incrementally**: Write our code in small, manageable chunks, testing each part as we go.
-   - **Use Comments**: Comment our code to explain our thought process, making it easier to understand later.
+# Step 5: Implement the Initial Solution
+- **Consider Brute Force**: Start with a brute force solution if the optimal approach isn't immediately clear.
+- **Choose Appropriate Data Structures**: Select data structures that best fit the problem's requirements.
+- **Code Incrementally**: Write your code in small, manageable chunks, testing each part as you go.
+- **Use Comments**: Comment your code to explain your thought process.
 
-6. **Test Our Solution**
-   - **Use Edge Cases**: Test with edge cases and boundary conditions to ensure robustness (e.g., empty inputs, maximum limits).
-   - **Verify Outputs**: Check if our outputs match the expected results for various test cases.
+# Step 6: Analyze Complexities and Inefficiencies
+- **Evaluate Time and Space Complexity**: Analyze the efficiency of your solution in terms of time and space usage.
+- **Identify Bottlenecks**: Pinpoint areas in your code that could be optimized.
+- **Compare with Requirements**: Check if your solution meets the complexity constraints specified in the problem.
 
-7. **Optimize Our Solution**
-   - **Evaluate Complexity**: Analyze the time and space complexity of our solution. Can it be improved?
-   - **Consider Alternative Approaches**: Explore other algorithms or data structures that might provide better performance.
+# Step 7: Optimize and Improve the Solution
+- **Consider Alternative Approaches**: Explore other algorithms or data structures that might provide better performance.
+- **Refactor Code**: Implement optimizations to improve time or space complexity.
+- **Verify Improvements**: Re-run your test cases to ensure the optimized solution still produces correct results.
 
-8. **Reflect and Learn**
-   - **Review Our Solution**: After solving the problem, take time to review our approach and the solution.
-   - **Learn from Mistakes**: Analyze any mistakes or inefficiencies and understand how to avoid them in the future.
+# Final Steps: Reflect and Learn
+- **Review Your Solution**: After solving the problem, take time to review your approach and the final solution.
+- **Learn from Mistakes**: Analyze any inefficiencies and understand how to avoid them in future problems.
+- **Seek Feedback**: Discuss your solution with peers or seek code reviews from experienced developers.
 
-9. **Practice Regularly**
-   - **Solve Various Problems**: Practice with a diverse range of problems on platforms like LeetCode, HackerRank, or CodeSignal to enhance our skills.
-   - **Participate in Competitions**: Engage in coding competitions to challenge oneself and learn new techniques.
-
-10. **Collaborate and Seek Feedback**
-    - **Discuss with Peers**: Engage with others to share different approaches and insights.
-    - **Seek Code Reviews**: Get feedback on our code from experienced developers to identify areas for improvement.
-   
 Thank you for being a part of this adventure. Let’s keep learning and growing together!
 
 References: https://www.youtube.com/watch?v=RBSGKlAvoiM, https://www.youtube.com/watch?v=pkYVOmU3MgA, https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/
