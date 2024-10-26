@@ -353,7 +353,7 @@ Uses randomness to make decisions, often leading to faster average-case performa
 - **Randomized Quicksort:** Using a random pivot for partitioning in quicksort.
 - **Karger's Algorithm:** Finding the minimum cut of a graph using random contractions.
 
-## Algorithms and Techniques for Data Structures
+## B. Algorithms and Techniques for Data Structures
 
 ### Primitive Data Types
 - **Integer, Float, Boolean**
