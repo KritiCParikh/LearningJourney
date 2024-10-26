@@ -255,7 +255,7 @@ A straightforward method of solving problems by checking all possible solutions 
 - a. Finding a lost key by systematically searching every room in the house, checking under every cushion and in every drawer until it's found.
 - b. Cracking a 4-digit PIN by trying all 10,000 possible combinations from 0000 to 9999.
 
-**Types of Brute Force Algorithms:**
+**Types**
 - **Exhaustive Search:** Systematically enumerating all potential candidates for the solution.
 - **Generate and Test:** Creating possible solutions and checking their validity.
 - **Iterative Brute Force:** Solving problems by trying all possibilities in a loop.
@@ -268,7 +268,7 @@ Breaking down a large problem into smaller sub-problems, solving them independen
 - a. Organizing a large community cleanup. We divide the town into sectors, assign teams to clean each sector independently, and then combine their efforts for a clean town.
 - b. Merge Sort algorithm, which recursively divides an array in half, sorts each half, and then merges the sorted halves.
 
-**Types of Divide and Conquer Algorithms:**
+**Types**
 - **Binary Search:** Efficiently finding an item in a sorted list by repeatedly dividing the search interval in half.
 - **Merge Sort:** Sorting by dividing the list, sorting the halves, and then merging them.
 - **Quick Sort:** Sorting by selecting a 'pivot' element and partitioning the other elements into two sub-arrays.
@@ -281,7 +281,7 @@ Breaking down a problem into overlapping sub-problems and solving each just once
 - a. Planning the most scenic route for a road trip. We calculate the best routes between major cities once, then use these calculations to determine the best overall route, avoiding recalculating the same city-to-city routes multiple times.
 - b. Calculating Fibonacci numbers: Instead of recalculating Fib(n−1) and Fib(n−2) for each Fib(n), dynamic programming stores these values, significantly reducing computation time.
 
-**Types of Dynamic Programming:**
+**Types**
 - **Top-down (Memoization):** Solving the problem recursively and caching the results.
 - **Bottom-up (Tabulation):** Solving the problem iteratively by building up from the base case.
 
@@ -290,7 +290,7 @@ Making the best immediate choice at each step, hoping to reach the global optima
 
 **Example:** Filling a piggy bank with coins, always choosing to put in the highest value coin that will fit, to maximize the total amount saved.
 
-**Types of Greedy Algorithms:**
+**Types**
 - **Selection Sort:** Repeatedly selecting the smallest element from the unsorted portion.
 - **Huffman Coding:** Creating optimal prefix codes for data compression.
 - **Dijkstra's Algorithm:** Finding the shortest path in a weighted graph.
@@ -302,7 +302,7 @@ A technique for solving problems incrementally, trying partial solutions and aba
 
 **Example:** Solving a crossword puzzle by filling in words, erasing and trying new words when we reach a point where no word fits.
 
-**Types of Backtracking Algorithms:**
+**Types**
 - **Depth-First Search (DFS):** Exploring as far as possible along each branch before backtracking.
 - **N-Queens Problem:** Placing N chess queens on an N×N chessboard so that no two queens threaten each other.
 - **Sudoku Solver:** Filling a 9×9 grid with digits so each column, row, and 3×3 section contain all digits from 1 to 9.
@@ -313,7 +313,7 @@ A method for solving optimization problems by dividing the search space into sma
 
 **Example:** House hunting within a budget. We divide the city into neighborhoods, set price limits, and eliminate entire areas that are over our budget without visiting every single house.
 
-**Types of Branch and Bound Algorithms:**
+**Types**
 - **Traveling Salesman Problem:** Finding the shortest possible route that visits each city exactly once and returns to the origin city.
 - **0/1 Knapsack Problem:** Selecting items to maximize value while staying within a weight limit.
 - **Job Assignment Problem:** Assigning jobs to workers to minimize total cost.
@@ -324,7 +324,7 @@ A method where a function calls itself to solve smaller instances of the same pr
 
 **Example:** Understanding a family tree. To know about our ancestors, we ask our parents about their parents, who in turn asked their parents, and so on, until we reach someone who doesn't know their parents' history.
 
-**Types of Recursion:**
+**Types**
 - **Linear Recursion:** A function calls itself once in its body.
 - **Tail Recursion:** The recursive call is the last operation in the function.
 - **Binary Recursion:** A function calls itself twice in its body.
@@ -336,7 +336,7 @@ Techniques designed for solving problems faster when classic methods are too slo
 
 **Example:** Choosing a restaurant in a new city. Instead of trying every restaurant, we might use heuristics like "busy restaurants are usually good" or "places with good online reviews are worth trying."
 
-**Types of Heuristic Algorithms:**
+**Types**
 - **Hill Climbing:** Iteratively making small changes to improve a solution.
 - **Simulated Annealing:** Probabilistically accepting worse solutions to escape local optima.
 - **Genetic Algorithms:** Evolving a population of solutions using principles inspired by natural selection.
@@ -347,7 +347,7 @@ Uses randomness to make decisions, often leading to faster average-case performa
 
 **Example:** Conducting a political poll. Instead of asking every citizen, we randomly select a smaller group to survey, which can provide a good estimate of overall opinion.
 
-**Types of Randomized Algorithms:**
+**Types**
 - **Las Vegas Algorithms:** Always produce the correct result, with running time varying randomly.
 - **Monte Carlo Algorithms:** May produce an incorrect result with a small probability.
 - **Randomized Quicksort:** Using a random pivot for partitioning in quicksort.
