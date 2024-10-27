@@ -134,7 +134,11 @@ Imagine we're planning a road trip from New York to Los Angeles:
 
 ## Big O Notation
 
-Big O Notation is the standard way to express algorithm complexity. It describes the upper bound of an algorithm's growth rate. Common notations include:
+Big O Notation is the standard way to express algorithm complexity. It describes the upper bound of an algorithm's growth rate. 
+
+![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/6.png)
+
+Common notations include:
 
 ### O(1): Constant Time
 The algorithm's execution time remains constant regardless of the input size.
