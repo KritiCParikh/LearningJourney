@@ -134,6 +134,8 @@ Imagine we're planning a road trip from New York to Los Angeles:
 
 ## Big O Notation
 
+![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/5.png)
+
 Big O Notation is the standard way to express algorithm complexity. It describes the upper bound of an algorithm's growth rate. Common notations include:
 
 ### O(1): Constant Time
@@ -483,4 +485,4 @@ These techniques are widely applicable across various data structures and proble
 - Potential method: Using a potential function to analyze cost
 - Application in data structures: Analyzing operations like dynamic array resizing
 
-References: https://www.wscubetech.com/resources/dsa/space-complexity, https://stackoverflow.com/questions/22398733/time-complexity-of-data-structures
+References: https://www.wscubetech.com/resources/dsa/space-complexity, https://stackoverflow.com/questions/22398733/time-complexity-of-data-structures; https://www.youtube.com/watch?v=v4cd1O4zkGw
