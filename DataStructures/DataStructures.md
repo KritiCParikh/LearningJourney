@@ -126,4 +126,4 @@ f. **Hash Table**
 | Non-Linear | Hash Table | Key-value pairs with hashing | Phone contacts | Open-addressing, Chaining |
 
 
-References: https://www.youtube.com/watch?v=bum_19loj9A, 
+References: https://www.youtube.com/watch?v=bum_19loj9A, https://instabyte.io/p/dsa-master, https://instabyte.io/p/interview-master-100
