@@ -7,12 +7,92 @@ DS refers to the way we store and organize data in a computer so that it can be 
 - **Algorithm:** Dijkstra’s Algorithm  
   Example: This algorithm can find the shortest path from one location to another, helping riders choose the most efficient route for their journey.
 
-# Data Type vs Data Structures
+# Data Types vs Abstract Data Types vs Data Structures
 
-| **Data Type**                                                                                                                                 | **Data Structure**                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| **Definition:** A data type is a classification that specifies which type of value a variable can hold and what operations can be performed on it. | **Definition:** A data structure is a way of organizing and storing data in a computer to enable efficient access and modification. |
-| **Example:** <br> Integer (int): Represents whole numbers. <br> `age = 25  # age is an integer`                                            | **Example:** <br> Array: A collection of elements identified by an index. <br> `numbers = [1, 2, 3, 4, 5]  # 'numbers' is an array of integers` |
+| Aspect                    | Data Types                                           | Abstract Data Types (ADTs)                                      | Data Structures                                     |
+|---------------------------|------------------------------------------------------|------------------------------------------------------------------|-----------------------------------------------------|
+| **Definition**            | Classification that specifies the type of value a variable can hold and its allowed operations | Mathematical model defining behavior of data and operations without implementation details | Concrete way of organizing and storing data for efficient access and modification |
+| **Level of Abstraction**  | Low to medium                                        | High                                                             | Low                                                 |
+| **Focus**                 | Defining value types and basic operations            | Defining "what" operations can be done                           | Implementing "how" data is stored and manipulated   |
+| **Implementation Details**| May be language-specific                             | Hidden from user                                                 | Exposed                                             |
+| **Examples**              | Integer, Float, Boolean, Char                        | List, Stack, Queue, Set                                          | Array, Linked List, Tree, Graph                     |
+| **Usage**                 | Basic building blocks in programming                 | High-level design and interface definition                       | Actual implementation of ADTs                       |
+| **Efficiency Consideration** | Inherent to the type                           | Not specified                                                    | Directly impacts performance                        |
+| **User Perspective**      | Basic data handling                                 | Simplified interface, focus on operations                        | Requires understanding of implementation            |
+| **Relationship**          | Foundation for ADTs and structures                  | Built upon data types, implemented by structures                 | Concrete realization of ADTs                        |
+
+## Key Differences for Beginners
+
+- **Data Types** are the most basic units in programming. They define what kind of data a variable can hold (like numbers or text) and what you can do with it.
+- **Abstract Data Types (ADTs)** are like blueprints. They describe what operations you can perform on data without saying exactly how it's done. It's like knowing you can add items to a shopping list without worrying about how the list is stored.
+- **Data Structures** are the actual ways we organize data in a computer. They implement ADTs and determine how data is stored and accessed, which affects how quickly operations can be performed.
+
+---
+
+## Real-Life Example: Library Management System
+
+Let's consider a library management system to illustrate how data types, ADTs, and data structures work together:
+
+### Data Types:
+- **String**: For book titles, author names
+- **Integer**: For book IDs, publication years
+- **Boolean**: For availability status
+
+### Abstract Data Type (ADT): Book Collection
+**Operations:**
+- Add a book
+- Remove a book
+- Search for a book
+- Check out a book
+- Return a book
+
+### Data Structure: Hash Table
+- **Implementation** of the Book Collection ADT
+- Uses book ID as the key for quick lookups
+
+### Code Example
+
+```python
+# Data Types
+book_id = 12345  # Integer
+title = "The Great Gatsby"  # String
+available = True  # Boolean
+
+# ADT: Book Collection (interface)
+class BookCollection:
+    def add_book(self, book):
+        pass
+    def remove_book(self, book_id):
+        pass
+    def search_book(self, title):
+        pass
+    def check_out_book(self, book_id):
+        pass
+    def return_book(self, book_id):
+        pass
+
+# Data Structure: Hash Table implementation
+class LibrarySystem(BookCollection):
+    def __init__(self):
+        self.books = {}  # Hash table
+
+    def add_book(self, book):
+        self.books[book.id] = book
+
+    def search_book(self, title):
+        return [book for book in self.books.values() if book.title == title]
+
+# Usage
+library = LibrarySystem()
+library.add_book(Book(book_id, title, available))
+found_book = library.search_book("The Great Gatsby")
+```
+In this example:
+
+- **Data types** (Integer, String, Boolean) are used to represent basic information about books.
+- The **BookCollection ADT** defines the operations without specifying how they're implemented.
+- The **LibrarySystem class** uses a hash table (dictionary in Python) as the data structure to efficiently implement the ADT operations.
+- This integration allows for a system that's both easy to understand at a high level (through the ADT) and efficient in its operations (through the chosen data structure).
 
 ![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/2.png)
 Note: The exact classification and implementation of these data structures can vary slightly between programming languages.
