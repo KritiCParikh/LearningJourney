@@ -94,6 +94,8 @@ In this example:
 - The **LibrarySystem class** uses a hash table (dictionary in Python) as the data structure to efficiently implement the ADT operations.
 - This integration allows for a system that's both easy to understand at a high level (through the ADT) and efficient in its operations (through the chosen data structure).
 
+# Classification of DS
+
 ![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/2.png)
 Note: The exact classification and implementation of these data structures can vary slightly between programming languages.
 
