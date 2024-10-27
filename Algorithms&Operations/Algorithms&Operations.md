@@ -170,13 +170,13 @@ This meme humorously reinterprets Big O notation, commonly used in computer scie
 
 | Big O Notation | Interpretation      | Reaction      | Insights      |
 |-----------------|---------------------|---------------|---------------|
-| O(1)            | Constant time       | O(yeah)       |  Fast and ideal; exciting.  |            
-| O(log n)       | Logarithmic time    | O(nice)       |  Efficient; positive reaction.  |
-| O(n)            | Linear time         | O(ok)         |  Acceptable; mild approval. |
+| O(1)            | Constant time       | O(yeah)       |  Fast and ideal; exciting; best.  |            
+| O(log n)       | Logarithmic time    | O(nice)       |  Efficient; positive reaction; good.  |
+| O(n)            | Linear time         | O(ok)         |  Acceptable; mild approval; fair. |
 | O(n²)           | Quadratic time      | O(my)         |  Concern; not ideal for large inputs.|
-| O(n log n)     | Log-linear time     | O(why?)       | Confusion; better than quadratic but worse than linear.  |
+| O(n log n)     | Log-linear time     | O(why?)       | Confusion; better than quadratic but worse than linear; bad.  |
 | O(2ⁿ)           | Exponential time    | O(no)         | Dread; undesirable for large data. |
-| O(n!)           | Factorial time      | O(mg!)        | Shock; impractical for large inputs. |
+| O(n!)           | Factorial time      | O(mg!)        | Shock; impractical for large inputs; worst. |
 
 ![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/3.png)
 
