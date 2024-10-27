@@ -134,26 +134,6 @@ Imagine we're planning a road trip from New York to Los Angeles:
 
 ## Big O Notation
 
-### Important Points to Calculate Big O Notation
-
-1. **Different Steps Get Added:**
-   - When an algorithm has multiple independent steps, their complexities are added together.
-   - **Example**: If one step is \(O(n)\) and another is \(O(m)\), the total complexity is \(O(n + m)\).
-
-2. **Drop Constants:**
-   - In Big O notation, constants are ignored because they don't significantly affect the growth rate.
-   - **Example**: \(O(2n)\) simplifies to \(O(n)\).
-
-3. **Different Inputs Mean Different Variables:**
-   - If an algorithm takes multiple inputs, each input should be represented by a different variable.
-   - **Example**: If an algorithm processes two arrays of sizes \(n\) and \(m\), its complexity might be expressed as \(O(n + m)\).
-
-4. **Drop Non-Dominant Terms:**
-   - Focus on the term with the highest growth rate and drop others.
-   - **Example**: \(O(n^2 + n)\) simplifies to \(O(n^2)\).
-
-![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/5.png)
-
 Big O Notation is the standard way to express algorithm complexity. It describes the upper bound of an algorithm's growth rate. Common notations include:
 
 ### O(1): Constant Time
@@ -183,6 +163,26 @@ The algorithm's execution time doubles with each additional input element.
 ### O(n!): Factorial Time
 The algorithm's execution time grows factorially with the input size.
 - **Real-world example:** Solving the traveling salesman problem by checking every possible route. For *n* cities, there are *n!* possible routes to consider, which grows extremely quickly as *n* increases.
+
+### Important Points to Calculate Big O Notation
+
+1. **Different Steps Get Added:**
+   - When an algorithm has multiple independent steps, their complexities are added together.
+   - **Example**: If one step is \(O(n)\) and another is \(O(m)\), the total complexity is \(O(n + m)\).
+
+2. **Drop Constants:**
+   - In Big O notation, constants are ignored because they don't significantly affect the growth rate.
+   - **Example**: \(O(2n)\) simplifies to \(O(n)\).
+
+3. **Different Inputs Mean Different Variables:**
+   - If an algorithm takes multiple inputs, each input should be represented by a different variable.
+   - **Example**: If an algorithm processes two arrays of sizes \(n\) and \(m\), its complexity might be expressed as \(O(n + m)\).
+
+4. **Drop Non-Dominant Terms:**
+   - Focus on the term with the highest growth rate and drop others.
+   - **Example**: \(O(n^2 + n)\) simplifies to \(O(n^2)\).
+
+![image](https://github.com/KritiCParikh/LearningJourney/blob/main/images/5.png)
 
 ## Alternative Big O Notation Meme
 
