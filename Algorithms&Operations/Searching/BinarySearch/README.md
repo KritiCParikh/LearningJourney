@@ -6,13 +6,15 @@ Applications:
 
 Real-Life Example:
 
-Implementation code/ Basic template:
+Implementation_Code/ Basic_Template:
 
 Edge_Cases:
 
-Time Complexity:
+Time Complexity: https://youtube.com/shorts/ks8_koF96M0?si=TfQK7W56vp2q4S7e
 
-Space_Complexity
+The_Mathematics_Behind_this:
+
+Space_Complexity:
 
 Visualizations:
 
