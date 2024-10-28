@@ -411,7 +411,7 @@ Uses randomness to make decisions, often leading to faster average-case performa
 - Kadane's algorithm: Finding maximum subarray sum
 - Dutch National Flag algorithm: Three-way partitioning
 - Tabulation in dynamic programming: Solving complex problems by breaking them down
-- Prefix sum technique: Precomputing cumulative sums for quick range queries
+- Prefix and Suffix Sum technique: Precomputing cumulative sums for quick range queries
 
 #### List
 - Insertion and deletion at any position: Modifying list elements
