@@ -4,6 +4,8 @@ Steps/ Conditions:
 
 Applications:
 
+Real-Life Example:
+
 Implementation code/ Basic template:
 
 Edge_Cases:
