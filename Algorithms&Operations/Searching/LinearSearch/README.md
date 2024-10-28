@@ -1,6 +1,8 @@
 Definition:
 
-Steps/ Conditions:
+Steps:
+
+Conditions: https://www.youtube.com/watch?v=eVuPCG5eIr4
 
 Applications:
 
