@@ -146,7 +146,7 @@ The algorithm's execution time remains constant regardless of the input size.
 
 ### O(log n): Logarithmic Time
 The algorithm's execution time increases logarithmically as the input size grows.
-- **Real-world example:** Finding a word in a dictionary. w can use a binary search approach, halving the section we're looking in each time, which is much faster than checking every page.
+- **Real-world example:** Finding a word in a dictionary. We can use a binary search approach, halving the section we're looking in each time, which is much faster than checking every page.
 
 ### O(n): Linear Time
 The algorithm's execution time increases linearly with the input size.
