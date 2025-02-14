@@ -491,6 +491,28 @@ These techniques are widely applicable across various data structures and proble
 - Fixed-size window: Processing fixed-length subarrays
 - Variable-size window: Adjusting subarray size based on conditions
 
+#### Sorting Algorithms
+##### Comparison-based Sorting  
+
+###### Simple Sorting Algorithms  
+- **Bubble Sort** – Repeatedly swaps adjacent elements if they are in the wrong order
+- **Selection Sort** – Selects the smallest element and swaps it into its correct position
+- **Insertion Sort** – Builds a sorted array by inserting elements one by one into their correct position
+
+###### Efficient Sorting Algorithms  
+- **Merge Sort** – A divide-and-conquer algorithm that splits the array, sorts each half, and merges them 
+- **Quick Sort** – Selects a pivot, partitions the array, and recursively sorts subarrays
+- **Heap Sort** – Utilizes a binary heap to repeatedly extract the minimum or maximum element 
+
+##### Non-comparison Sorting  
+- **Counting Sort** – Counts occurrences of each element and places them in the correct position
+- **Radix Sort** – Sorts numbers digit by digit using a stable sorting algorithm like Counting Sort  
+- **Bucket Sort** – Distributes elements into multiple buckets and sorts each bucket individually 
+
+##### Hybrid Sorting Algorithms  
+- **Timsort** – A hybrid of Merge Sort and Insertion Sort, optimized for real-world data
+- **Introsort** – A combination of Quick Sort, Heap Sort, and Insertion Sort, switching strategies based on recursion depth
+
 #### Two Pointers
 - Opposite directional: Pointers moving towards each other
 - Same directional: Pointers moving in the same direction
