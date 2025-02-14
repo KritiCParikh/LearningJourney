@@ -493,7 +493,7 @@ These techniques are widely applicable across various data structures and proble
 
 #### 2. Sorting Algorithms  
 
-##### Comparison-based Sorting  
+###### - Comparison-based Sorting  
 
 ###### Simple Sorting Algorithms  
 - **Bubble Sort** – Repeatedly swaps adjacent elements if they are in the wrong order.  
@@ -505,7 +505,7 @@ These techniques are widely applicable across various data structures and proble
 - **Quick Sort** – Selects a pivot, partitions the array, and recursively sorts subarrays.  
 - **Heap Sort** – Utilizes a binary heap to repeatedly extract the minimum or maximum element.  
 
-###### Non-comparison Sorting  
+###### - Non-comparison Sorting  
 - **Counting Sort** – Counts occurrences of each element and places them in the correct position.  
 - **Radix Sort** – Sorts numbers digit by digit using a stable sorting algorithm like Counting Sort.  
 - **Bucket Sort** – Distributes elements into multiple buckets and sorts each bucket individually.  
