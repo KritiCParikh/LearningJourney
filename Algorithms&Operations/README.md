@@ -484,49 +484,51 @@ Uses randomness to make decisions, often leading to faster average-case performa
 - Priority Queue implementation: Efficient highest-priority element access
 - K-way merge using heaps: Combining multiple sorted sequences
 
-### Additional Techniques
-These techniques are widely applicable across various data structures and problem types, enhancing efficiency and problem-solving capabilities:
+### Additional Techniques  
+These techniques are widely applicable across various data structures and problem types, enhancing efficiency and problem-solving capabilities.  
 
-#### Sliding Window
-- Fixed-size window: Processing fixed-length subarrays
-- Variable-size window: Adjusting subarray size based on conditions
+#### 1. Sliding Window  
+- **Fixed-size window** – Processes fixed-length subarrays efficiently.  
+- **Variable-size window** – Adjusts the subarray size dynamically based on conditions.  
 
-#### Sorting Algorithms
+#### 2. Sorting Algorithms  
+
 ##### Comparison-based Sorting  
 
 ###### Simple Sorting Algorithms  
-- **Bubble Sort** – Repeatedly swaps adjacent elements if they are in the wrong order
-- **Selection Sort** – Selects the smallest element and swaps it into its correct position
-- **Insertion Sort** – Builds a sorted array by inserting elements one by one into their correct position
+- **Bubble Sort** – Repeatedly swaps adjacent elements if they are in the wrong order.  
+- **Selection Sort** – Selects the smallest element and swaps it into its correct position.  
+- **Insertion Sort** – Builds a sorted array by inserting elements one by one into their correct position.  
 
 ###### Efficient Sorting Algorithms  
-- **Merge Sort** – A divide-and-conquer algorithm that splits the array, sorts each half, and merges them 
-- **Quick Sort** – Selects a pivot, partitions the array, and recursively sorts subarrays
-- **Heap Sort** – Utilizes a binary heap to repeatedly extract the minimum or maximum element 
+- **Merge Sort** – A divide-and-conquer algorithm that splits the array, sorts each half, and merges them.  
+- **Quick Sort** – Selects a pivot, partitions the array, and recursively sorts subarrays.  
+- **Heap Sort** – Utilizes a binary heap to repeatedly extract the minimum or maximum element.  
 
 ##### Non-comparison Sorting  
-- **Counting Sort** – Counts occurrences of each element and places them in the correct position
-- **Radix Sort** – Sorts numbers digit by digit using a stable sorting algorithm like Counting Sort  
-- **Bucket Sort** – Distributes elements into multiple buckets and sorts each bucket individually 
+- **Counting Sort** – Counts occurrences of each element and places them in the correct position.  
+- **Radix Sort** – Sorts numbers digit by digit using a stable sorting algorithm like Counting Sort.  
+- **Bucket Sort** – Distributes elements into multiple buckets and sorts each bucket individually.  
 
 ##### Hybrid Sorting Algorithms  
-- **Timsort** – A hybrid of Merge Sort and Insertion Sort, optimized for real-world data
-- **Introsort** – A combination of Quick Sort, Heap Sort, and Insertion Sort, switching strategies based on recursion depth
+- **Timsort** – A hybrid of Merge Sort and Insertion Sort, optimized for real-world data.  
+- **Introsort** – A combination of Quick Sort, Heap Sort, and Insertion Sort, switching strategies based on recursion depth.  
 
-#### Two Pointers
-- Opposite directional: Pointers moving towards each other
-- Same directional: Pointers moving in the same direction
-- Fast and slow pointers: Detecting cycles or finding middle elements
+#### 3. Two Pointers  
+- **Opposite directional** – Pointers moving towards each other.  
+- **Same directional** – Pointers moving in the same direction.  
+- **Fast and slow pointers** – Detecting cycles or finding middle elements.  
 
-#### Bit Manipulation
-- Bit masking: Selecting specific bits
-- Bit shifting: Moving bits left or right
-- XOR manipulation: Using XOR for various bit operations
+#### 4. Bit Manipulation  
+- **Bit masking** – Selecting specific bits.  
+- **Bit shifting** – Moving bits left or right.  
+- **XOR manipulation** – Using XOR for various bit operations.  
 
-#### Amortized Analysis
-- Aggregate method: Analyzing total cost over a sequence of operations
-- Accounting method: Assigning costs to individual operations
-- Potential method: Using a potential function to analyze cost
-- Application in data structures: Analyzing operations like dynamic array resizing
+#### 5. Amortized Analysis  
+- **Aggregate method** – Analyzing total cost over a sequence of operations.  
+- **Accounting method** – Assigning costs to individual operations.  
+- **Potential method** – Using a potential function to analyze cost.  
+- **Application in data structures** – Analyzing operations like dynamic array resizing.  
+
 
 References: https://www.wscubetech.com/resources/dsa/space-complexity, https://stackoverflow.com/questions/22398733/time-complexity-of-data-structures; https://www.youtube.com/watch?v=v4cd1O4zkGw, https://www.youtube.com/watch?v=fW_OS3LGB9Q, https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/, https://www.youtube.com/watch?v=kp3fCihUXEg
