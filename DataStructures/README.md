@@ -24,7 +24,7 @@ DS refers to the way we store and organize data in a computer so that it can be 
 ## Key Differences for Beginners
 
 - **Data Types** are the most basic units in programming. They define what kind of data a variable can hold (like numbers or text) and what you can do with it.
-- **Abstract Data Types (ADTs)** are like blueprints. They describe what operations you can perform on data without saying exactly how it's done. It's like knowing you can add items to a shopping list without worrying about how the list is stored.
+- **Abstract Data Types (ADTs)** are like blueprints. They describe what operations you can perform on data without saying exactly how it's done. Let's think of ADT as a black box that hides the inner structure and design of the data type from the user. It's like knowing you can add items to a shopping list without worrying about how the list is stored.
 - **Data Structures** are the actual ways we organize data in a computer. They implement ADTs and determine how data is stored and accessed, which affects how quickly operations can be performed.
 
 ---
@@ -208,4 +208,5 @@ f. **Hash Table**
 | Non-Linear | Hash Table | Key-value pairs with hashing | Phone contacts | Open-addressing, Chaining |
 
 
-References: https://www.youtube.com/watch?v=bum_19loj9A, https://instabyte.io/p/dsa-master, https://instabyte.io/p/interview-master-100, https://www.youtube.com/watch?v=cQWr9DFE1ww
+References: https://www.youtube.com/watch?v=bum_19loj9A, https://instabyte.io/p/dsa-master, https://instabyte.io/p/interview-master-100, https://www.youtube.com/watch?v=cQWr9DFE1ww,
+Neso Academy
