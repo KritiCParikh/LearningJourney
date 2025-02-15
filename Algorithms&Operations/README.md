@@ -422,7 +422,7 @@ Uses randomness to make decisions, often leading to faster average-case performa
 - Insertion/Deletion (at beginning, end, or middle): Modifying list structure
 - Traversal: Visiting all nodes
 - Reversal: Inverting node order
-- Cycle detection (Floyd's Cycle-Finding Algorithm): Finding loops in linked lists
+- Cycle detection (Floyd's Cycle-Finding Algorithm/ Tortoise and Hare Algorithm): Finding loops in linked lists
 - Merging two sorted linked lists: Combining ordered lists
 - Two pointers for finding middle element: Efficient middle node detection
 
