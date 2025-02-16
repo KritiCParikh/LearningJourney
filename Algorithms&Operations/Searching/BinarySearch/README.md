@@ -105,26 +105,26 @@ This proves that **Binary Search runs in O(log n) time**.
 ```plaintext
 Array = [1, 3, 5, 7, 9, 11, 13, 15], Target = 7
 
-Step 1: mid = (0+7)/2 = 3 → array[3] = 7 ✅ Found!
+Step 1: mid = (0+7)/2 = 3 → array[3] = 7 ✔ Found!
 ```
 
 ## **Comparisons with Similar Algorithms**
 | **Algorithm**            | **Time Complexity**  | **Sorted Required?** | **Best Use Case**                   |
 |-------------------------|---------------------|---------------------|--------------------------------------|
-| **Binary Search**       | O(log n)           | ✅ Yes              | Searching in sorted arrays         |
-| **Linear Search**       | O(n)               | ❌ No               | Small or unsorted datasets         |
-| **Jump Search**         | O(√n)              | ✅ Yes              | Large, sorted datasets             |
-| **Interpolation Search**| O(log log n) (best)| ✅ Yes              | Uniformly distributed data         |
+| **Binary Search**       | O(log n)           | Yes              | Searching in sorted arrays         |
+| **Linear Search**       | O(n)               | No               | Small or unsorted datasets         |
+| **Jump Search**         | O(√n)              | Yes              | Large, sorted datasets             |
+| **Interpolation Search**| O(log log n) (best)| Yes              | Uniformly distributed data         |
 
 ---
 
 ## **Pros and Cons**
-### ✅ **Pros**
+### **Pros**
 - **Fast (O(log n))** for large datasets.
 - **Works well for sorted data**.
 - **Low memory usage** in iterative form.
 
-### ❌ **Cons**
+### **Cons**
 - **Requires sorted data**.
 - **Not efficient for small datasets**.
 - **Not useful for dynamic data (requires re-sorting).**
