@@ -51,6 +51,32 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - **Learn from Mistakes**: Analyze any inefficiencies and understand how to avoid them in future problems.
 - **Seek Feedback**: Discuss our solution with peers or seek code reviews from experienced developers.
 
+## Practice resourses:
+- https://neetcode.io/roadmap
+- https://www.hackerrank.com/domains/data-structures
+- https://www.geeksforgeeks.org/top-100-data-structure-and-algorithms-dsa-interview-questions-topic-wise/
+- https://www.codechef.com/learn/topic/data-structures-and-algorithms
+- https://codeforces.com/blog/entry/131850
+- http://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/
+- https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+- https://leetcode.com/discuss/study-guide/2009997/how-to-get-started-with-dsa-and-practice-leetcode-efficiently
+- https://www.algoexpert.io/questions
+- https://www.interviewbit.com/coding-interview-questions/
+
+## Resources:
+- https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
+- https://exercism.org/tracks
+- https://projecteuler.net/about
+- https://www.youtube.com/@abdul_bari
+- https://www.youtube.com/@sahilandsarra
+- https://www.youtube.com/@ApnaCollegeOfficial
+- https://www.youtube.com/mycodeschool
+- https://www.youtube.com/@nesoacademy
+- https://www.youtube.com/@CodeWithHarry 
+- https://www.youtube.com/channel/UCnxhETjJtTPs37hOZ7vQ88g - TechDose
+- https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ - Aditya Verma
+- https://www.youtube.com/channel/UCx-kFfzekMbhODaBss-ZnsA - Algorithm EveryDay
+
 Thank you for being a part of this adventure. Let’s keep learning and growing together!
 
 References: https://www.youtube.com/watch?v=RBSGKlAvoiM, https://www.youtube.com/watch?v=pkYVOmU3MgA, https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/, https://neetcode.io/roadmap
