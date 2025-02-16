@@ -51,8 +51,8 @@ def insertion_sort(arr):
 - **O(1)**: Insertion Sort is an in-place sorting algorithm, meaning it doesn't require extra space beyond the input list.
 
 ### 10. **The Mathematics Behind This:**
-At each step, we compare the current element to the already sorted part of the array. The number of comparisons depends on how far the current element is from its sorted position.  
-For the worst-case scenario, every element will be compared with all previously sorted elements, leading to O(n^2) comparisons.
+- At each step, we compare the current element to the already sorted part of the array. The number of comparisons depends on how far the current element is from its sorted position.  
+- For the worst-case scenario, every element will be compared with all previously sorted elements, leading to O(n^2) comparisons.
 
 ### 11. **Visualizations:**
 - Initially, the algorithm considers the first element sorted.
