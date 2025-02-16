@@ -2,17 +2,14 @@
 ### Arrays & Strings  
 
 1. **Understanding and practicing basic operations:**  
-   - Traversal, Insertion, Deletion, Searching.  
-   - [Google Colab Notebook](https://colab.research.google.com/drive/1svFQMQ36DVKP0xjZtqciThOjmOkTOXVy?usp=sharing)  
+   - Traversal, Insertion, Deletion, Searching.
+   - Implementation : [Google Colab Notebook](https://colab.research.google.com/drive/1svFQMQ36DVKP0xjZtqciThOjmOkTOXVy?usp=sharing)  
 
 2. **Common problems:**  
    - Two-Sum  
    - Subarray Sum  
    - Reverse an Array  
    - Palindrome Check  
-
-3. **Implementation**
-
 
 ### CRUD Operations  
 - **Create:** Initializing arrays and strings, dynamic allocation.  
