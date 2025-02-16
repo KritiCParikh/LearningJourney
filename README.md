@@ -72,7 +72,8 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - https://www.youtube.com/@ApnaCollegeOfficial
 - https://www.youtube.com/mycodeschool
 - https://www.youtube.com/@nesoacademy
-- https://www.youtube.com/@CodeWithHarry 
+- https://www.youtube.com/@CodeWithHarry
+- https://www.youtube.com/@BroCodez
 - https://www.youtube.com/channel/UCnxhETjJtTPs37hOZ7vQ88g - TechDose
 - https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ - Aditya Verma
 - https://www.youtube.com/channel/UCx-kFfzekMbhODaBss-ZnsA - Algorithm EveryDay
