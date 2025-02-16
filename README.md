@@ -63,7 +63,7 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - https://www.algoexpert.io/questions
 - https://www.interviewbit.com/coding-interview-questions/
 
-## Resources:
+## Learning Resources:
 - https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
 - https://exercism.org/tracks
 - https://projecteuler.net/about
