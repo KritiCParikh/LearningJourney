@@ -1,37 +1,37 @@
 # Stacks
 
-## Definition:
+## 1. Definition:
 A **stack** is a linear data structure that follows the **Last In, First Out (LIFO)** principle. This means that the last element added is the first one to be removed.
 
 ---
 
-## Operations:
+## 2. Operations:
 
-### 1. **Push**:
+### a. **Push**:
 Adds an element to the top of the stack.  
 **Example**: `stack.push(5)` (adds the value 5 to the stack)
 
-### 2. **Pop**:
+### b. **Pop**:
 Removes and returns the element from the top of the stack.  
 **Example**: `stack.pop()` (removes the top element from the stack)
 
-### 3. **Peek (Top)**:
+### c. **Peek (Top)**:
 Returns the top element of the stack without removing it.  
 **Example**: `stack.peek()` (shows the top element)
 
-### 4. **IsEmpty**:
+### d. **IsEmpty**:
 Checks if the stack is empty.  
 **Example**: `stack.isEmpty()` (returns true if the stack is empty)
 
-### 5. **Size**:
+### e. **Size**:
 Returns the number of elements in the stack.  
 **Example**: `stack.size()` (returns the number of elements in the stack)
 
 ---
 
-## Implementations:
+## 3. Implementations:
 
-### 1. **Array-based Implementation**:
+### a. **Array-based Implementation**:
 - An array is used where a pointer or index keeps track of the top element of the stack.
 - Constant time complexity (O(1)) for both **push** and **pop** operations.
 
@@ -54,7 +54,7 @@ class Stack:
         return None
 ```
 
-### 2. **Linked List-based Implementation:n**:
+### b. **Linked List-based Implementation:n**:
 - A linked list is used where each node contains an element and a reference to the next node.
 - Each new element is added at the beginning (top) of the linked list.
 
@@ -87,7 +87,7 @@ class Stack:
 ```
 
 
-## Tower of Hanoi (Game-related problem):
+## 4. Tower of Hanoi (Game-related problem):
 
 The **Tower of Hanoi** is a classic problem that involves moving disks of different sizes from one peg to another, following a few rules:
 
@@ -99,7 +99,7 @@ This problem can be solved recursively using stacks, where each recursive call c
 
 ---
 
-## LIFO (Last In, First Out):
+## 5. LIFO (Last In, First Out):
 
 The **Last In, First Out (LIFO)** principle means that the most recently added element is the first to be removed. This contrasts with **FIFO (First In, First Out)**, which is used in queues, where the first element added is the first to be removed.
 
@@ -107,6 +107,16 @@ In the case of a stack:
 
 - **Push** adds an item to the "top" (most recent).
 - **Pop** removes the item from the "top" (most recent).
+
+---
+
+6. **Common problems:**  
+  - Balanced Parentheses
+  - Reverse a Stack
+  - Tower of Hanoi
+  - Sort a Stack
+  - Stock Span Problem
+  - Next Greater Element
 
 
 References: https://www.youtube.com/watch?v=fEaLAs3lzo0&list=PLVHgQku8Z9354TOeH6sygmoL_t2poSaxS&index=3
