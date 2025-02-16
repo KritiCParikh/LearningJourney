@@ -11,7 +11,9 @@
    - Reverse an Array  
    - Palindrome Check  
 
-## Example:  
+3. **Implementation**
+
+
 ### CRUD Operations  
 - **Create:** Initializing arrays and strings, dynamic allocation.  
 - **Read:** Accessing elements, iteration, and searching techniques.  
