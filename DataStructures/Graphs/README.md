@@ -59,63 +59,6 @@ Graphs can be implemented using two main structures:
   - **Advantages:** More space-efficient for sparse graphs.
   - **Disadvantages:** It can be slower for checking if an edge exists between two vertices (O(V) time complexity).
 
-- **Edge List:**
-  - A simple list where each element is a pair (or tuple) of vertices that form an edge in the graph. This is typically used when only the edges are important (e.g., for graph algorithms like Kruskal’s for minimum spanning trees).
-  
-## 5. **Common Problems Involving Graphs**
-
-- **Shortest Path Algorithms:**
-  - **Dijkstra’s Algorithm:** Finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative weights.
-  - **Bellman-Ford Algorithm:** Computes the shortest paths from a source vertex to all other vertices in a weighted graph, allowing for negative weights (but no negative weight cycles).
-  
-- **Cycle Detection:**
-  - In a directed graph, you can use DFS with recursion stacks to detect cycles.
-  - In an undirected graph, DFS or BFS can also be used with parent pointers to detect cycles.
-  
-- **Topological Sorting (for Directed Acyclic Graphs):** Given a DAG, find an ordering of vertices such that for every directed edge \( u \to v \), vertex \( u \) comes before vertex \( v \).
-
-- **Connected Components:** Find all the connected components in an undirected graph.
-
-- **Graph Coloring:** Assign colors to the vertices of a graph such that no two adjacent vertices share the same color. This is useful in problems like scheduling.
-
-- **Minimum Spanning Tree (MST):**
-  - **Kruskal’s Algorithm:** A greedy algorithm for finding the MST of a graph.
-  - **Prim’s Algorithm:** Another greedy algorithm for finding the MST by growing the tree one edge at a time.
-
-- **Bipartite Graph Checking:** A graph is bipartite if the vertices can be divided into two sets such that no two vertices within the same set share an edge.
-
-- **Strongly Connected Components:** In a directed graph, a Strongly Connected Component (SCC) is a subgraph where every vertex is reachable from every other vertex in that subgraph.
-
-## 6. **CRUD Operations in Graphs**
-
-- **Create:**
-  - Create a new graph by defining its structure (adjacency matrix, adjacency list, etc.).
-  - Add a vertex or an edge.
-
-- **Read:**
-  - Access and view the vertices and edges.
-  - Perform graph traversal (DFS/BFS).
-  - Query properties like whether a path exists between two vertices.
-
-- **Update:**
-  - Modify an existing edge (e.g., change the weight).
-  - Update the graph structure (e.g., add new vertices or edges).
-  
-- **Delete:**
-  - Remove a vertex or an edge from the graph.
-  - Delete a vertex and all its edges.
- 
-## 7. **Implementation**
-
-There are two common ways to represent a graph in computer science:
-
-1. **Adjacency Matrix**: A 2D array of size V x V where V is the number of vertices. Each element `matrix[i][j]` holds a value that indicates whether there is an edge between vertex `i` and vertex `j`.
-
-2. **Adjacency List**: A dictionary or list where each vertex has a list of adjacent vertices. This representation is more space-efficient for sparse graphs.
-
-
-## Graph Implementation (Adjacency List Representation)
-
 ```python
 class Graph:
     def __init__(self):
@@ -192,5 +135,53 @@ print("BFS starting from node 0:", g.bfs(0))  # Expected output: [0, 1, 2, 3, 4,
 print("DFS starting from node 0:", g.dfs(0))  # Expected output: [0, 1, 3, 4, 5, 2]
 
 ```
+
+
+- **Edge List:**
+  - A simple list where each element is a pair (or tuple) of vertices that form an edge in the graph. This is typically used when only the edges are important (e.g., for graph algorithms like Kruskal’s for minimum spanning trees).
+  
+## 5. **Common Problems Involving Graphs**
+
+- **Shortest Path Algorithms:**
+  - **Dijkstra’s Algorithm:** Finds the shortest path from a source vertex to all other vertices in a weighted graph with non-negative weights.
+  - **Bellman-Ford Algorithm:** Computes the shortest paths from a source vertex to all other vertices in a weighted graph, allowing for negative weights (but no negative weight cycles).
+  
+- **Cycle Detection:**
+  - In a directed graph, you can use DFS with recursion stacks to detect cycles.
+  - In an undirected graph, DFS or BFS can also be used with parent pointers to detect cycles.
+  
+- **Topological Sorting (for Directed Acyclic Graphs):** Given a DAG, find an ordering of vertices such that for every directed edge \( u \to v \), vertex \( u \) comes before vertex \( v \).
+
+- **Connected Components:** Find all the connected components in an undirected graph.
+
+- **Graph Coloring:** Assign colors to the vertices of a graph such that no two adjacent vertices share the same color. This is useful in problems like scheduling.
+
+- **Minimum Spanning Tree (MST):**
+  - **Kruskal’s Algorithm:** A greedy algorithm for finding the MST of a graph.
+  - **Prim’s Algorithm:** Another greedy algorithm for finding the MST by growing the tree one edge at a time.
+
+- **Bipartite Graph Checking:** A graph is bipartite if the vertices can be divided into two sets such that no two vertices within the same set share an edge.
+
+- **Strongly Connected Components:** In a directed graph, a Strongly Connected Component (SCC) is a subgraph where every vertex is reachable from every other vertex in that subgraph.
+
+## 6. **CRUD Operations in Graphs**
+
+- **Create:**
+  - Create a new graph by defining its structure (adjacency matrix, adjacency list, etc.).
+  - Add a vertex or an edge.
+
+- **Read:**
+  - Access and view the vertices and edges.
+  - Perform graph traversal (DFS/BFS).
+  - Query properties like whether a path exists between two vertices.
+
+- **Update:**
+  - Modify an existing edge (e.g., change the weight).
+  - Update the graph structure (e.g., add new vertices or edges).
+  
+- **Delete:**
+  - Remove a vertex or an edge from the graph.
+  - Delete a vertex and all its edges.
+ 
 
 References: https://www.youtube.com/watch?v=4jyESQDrpls
