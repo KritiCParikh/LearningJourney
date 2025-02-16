@@ -12,6 +12,7 @@ A **queue** is a linear data structure that follows the **First In, First Out (F
 - **Simple Queue**: A standard FIFO queue.
 - **Circular Queue**: A queue where the last element is connected back to the first element, allowing for efficient space utilization.
 - **Priority Queue**: Elements are dequeued based on priority, rather than the order they were enqueued.
+- **Double-Ended Queue (Deque)**: A queue that allows insertion and deletion of elements from both ends, providing more flexibility than a regular queue.
 
 ## 2. **Operations**
 Queues support several basic operations:
