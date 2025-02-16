@@ -72,7 +72,7 @@ where:
 - c1 is the constant time required to start the loop.
 - c2 is the time required for each iteration.
 
-Thus, **T(n)** grows linearly with n**.
+Thus, **T(n) grows linearly with n**.
 
 ---
 
