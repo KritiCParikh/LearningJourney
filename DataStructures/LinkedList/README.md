@@ -48,7 +48,8 @@ The last node connects back to the head.
    - Detecting Cycles (Floyd’s Cycle Detection or Tortoise & Hare Algorithm)
    - Finding the Middle Element (Tortoise & Hare Algorithm)  
    - Merging Two Sorted Linked Lists
-   - Removing Duplicates from a Linked List  
+   - Removing Duplicates from a Linked List
+   - Happy Number Detection
 
 ---
 
