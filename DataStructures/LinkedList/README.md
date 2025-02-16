@@ -216,10 +216,6 @@ The last node connects back to the head.
 - **Update:** Modify a node’s value.
 - **Delete:** Remove a node from the list.
 
----
-
-## 6. Implementation
-
 
 ---
 
