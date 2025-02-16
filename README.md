@@ -53,4 +53,4 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 
 Thank you for being a part of this adventure. Let’s keep learning and growing together!
 
-References: https://www.youtube.com/watch?v=RBSGKlAvoiM, https://www.youtube.com/watch?v=pkYVOmU3MgA, https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/
+References: https://www.youtube.com/watch?v=RBSGKlAvoiM, https://www.youtube.com/watch?v=pkYVOmU3MgA, https://www.geeksforgeeks.org/what-is-data-structure-types-classifications-and-applications/, https://neetcode.io/roadmap
