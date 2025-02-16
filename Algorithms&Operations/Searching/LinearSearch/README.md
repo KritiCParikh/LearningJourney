@@ -66,15 +66,13 @@ print(result)  # Output: 2
 ## **The Mathematics Behind This**
 Linear Search follows a simple mathematical model:
 
-\[
-T(n) = c_1 + c_2 \cdot n
-\]
+T(n)=c1 +c2⋅n
 
 where:
-- \( c_1 \) is the constant time required to start the loop.
-- \( c_2 \) is the time required for each iteration.
+- c1 is the constant time required to start the loop.
+- c2 is the time required for each iteration.
 
-Thus, **T(n) grows linearly with n**.
+Thus, **T(n)** grows linearly with n**.
 
 ---
 
