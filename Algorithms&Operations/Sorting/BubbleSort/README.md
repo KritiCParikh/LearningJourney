@@ -27,7 +27,7 @@ Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps
 - **Queue Management:** Arranging people in a line based on some priority using repeated swaps.  
 - **Leaderboard Ranking:** Ranking players based on scores by repeatedly comparing and swapping adjacent elements.  
 
-## Implementation (Pseudo Code & Python)  
+## Implementation  
 
 ### Pseudo Code  
 ```text
