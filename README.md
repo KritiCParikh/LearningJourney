@@ -51,7 +51,7 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - **Learn from Mistakes**: Analyze any inefficiencies and understand how to avoid them in future problems.
 - **Seek Feedback**: Discuss our solution with peers or seek code reviews from experienced developers.
 
-## Practice resourses:
+## Practice Resources:
 - https://neetcode.io/roadmap
 - https://www.hackerrank.com/domains/data-structures
 - https://www.geeksforgeeks.org/top-100-data-structure-and-algorithms-dsa-interview-questions-topic-wise/
