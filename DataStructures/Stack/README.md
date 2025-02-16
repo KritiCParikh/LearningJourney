@@ -54,7 +54,7 @@ class Stack:
         return None
 ```
 
-### 1. **Linked List-based Implementation:n**:
+### 2. **Linked List-based Implementation:n**:
 - A linked list is used where each node contains an element and a reference to the next node.
 - Each new element is added at the beginning (top) of the linked list.
 
