@@ -56,10 +56,10 @@ function bubbleSort(array):
 - **Worst Case (Reverse Sorted Array)** → O(n²)  
 - **Average Case** → O(n²)  
 
-The number of comparisons:  
-\[
-(n-1) + (n-2) + ... + 2 + 1 = \frac{n(n-1)}{2} \Rightarrow O(n^2)
-\]
+The number of comparisons in Bubble Sort is calculated as:
+
+(n-1) + (n-2) + ... + 2 + 1 = (n(n-1))/2 ≈ O(n²)
+
 If optimized with a "swapped" flag, best-case time complexity is **O(n)**.  
 
 ## Mathematics Behind Bubble Sort  
