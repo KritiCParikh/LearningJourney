@@ -106,6 +106,7 @@ This proves that **Binary Search runs in O(log n) time**.
 Array = [1, 3, 5, 7, 9, 11, 13, 15], Target = 7
 
 Step 1: mid = (0+7)/2 = 3 → array[3] = 7 ✅ Found!
+```
 
 ## **Comparisons with Similar Algorithms**
 | **Algorithm**            | **Time Complexity**  | **Sorted Required?** | **Best Use Case**                   |
