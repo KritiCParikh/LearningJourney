@@ -110,7 +110,7 @@ In the case of a stack:
 
 ---
 
-6. **Common problems:**  
+## 6. **Common problems:**  
   - Balanced Parentheses
   - Reverse a Stack
   - Tower of Hanoi
