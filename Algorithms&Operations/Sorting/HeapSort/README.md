@@ -1,132 +1,117 @@
-# Bubble Sort 
+# Heap Sort
 
-## Definition  
-Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.  
+### 1. **Definition:**
+Heap Sort is a comparison-based sorting algorithm that uses a binary heap data structure. It works by first building a max heap (or min heap) from the input data and then repeatedly extracting the maximum (or minimum) element from the heap and placing it into the sorted array.
 
-## Steps of Bubble Sort  
-1. Start from the first element of the array.  
-2. Compare the current element with the next element.  
-3. If the current element is greater than the next element, swap them.  
-4. Move to the next adjacent pair and repeat Steps 2 and 3 for the entire array.  
-5. The largest element moves to the end of the array after one complete pass.  
-6. Repeat the process for the remaining elements until the array is sorted.  
+### 2. **Steps:**
+1. **Build a Max Heap:** Rearrange the input array into a max heap, where the largest element is at the root of the tree.
+2. **Swap the Root with the Last Element:** Swap the root of the heap (maximum element) with the last element of the heap.
+3. **Heapify the Reduced Heap:** After the swap, heapify the reduced heap to restore the heap property.
+4. **Repeat:** Repeat steps 2 and 3 for the remaining elements until the heap is empty, and the array is sorted.
 
-## Conditions  
-- The array should be mutable since swaps are required.  
-- The input data can be in any order (sorted, reverse sorted, or random).  
-- Works well for small datasets but is inefficient for large datasets.  
+### 3. **Conditions:**
+- The algorithm requires a complete binary tree (heap), where each parent node is greater (for max heap) or smaller (for min heap) than its children.
+- The time complexity of the heap sort algorithm depends on the number of elements in the array.
 
-## Applications of Bubble Sort  
-- **Education:** Used to teach sorting concepts due to its simplicity.  
-- **Computer Graphics:** Occasionally used in graphics applications where sorting is required.  
-- **Embedded Systems:** Suitable for sorting small data sets in resource-constrained environments.  
-- **Detecting Nearly Sorted Arrays:** Can be used when the list is almost sorted with few misplaced elements.  
+### 4. **Applications:**
+- **Priority Queues:** Since heaps allow for efficient extraction of the maximum or minimum element, Heap Sort is useful for implementing priority queues.
+- **Memory-efficient Sorting:** It is useful when you want to perform sorting in-place without additional memory for data structures.
+- **Scheduling Algorithms:** Used in scheduling tasks based on priority.
+- **Data Stream Sorting:** In real-time systems where data comes in a continuous stream.
 
-## Real-Life Examples  
-- **Sorting Playing Cards:** If you manually sort a deck by repeatedly swapping adjacent cards, you’re using Bubble Sort.  
-- **Queue Management:** Arranging people in a line based on some priority using repeated swaps.  
-- **Leaderboard Ranking:** Ranking players based on scores by repeatedly comparing and swapping adjacent elements.  
+### 5. **Real-life Examples:**
+- **CPU Scheduling:** Prioritizing tasks that need to be executed by the CPU.
+- **Event Simulation:** Sorting and prioritizing events in a simulation, such as in discrete event simulation systems.
+- **Task Scheduling in Operating Systems:** Organizing tasks with different priorities to manage execution time.
 
-## Implementation  
+### 6. **Implementation:**
+```python
+def heapify(arr, n, i):
+    largest = i  # Initialize largest as root
+    left = 2 * i + 1  # Left child
+    right = 2 * i + 2  # Right child
 
-### Pseudo Code  
-```text
-function bubbleSort(array):
-    n = length of array
-    for i from 0 to n-1:
-        swapped = false
-        for j from 0 to n-i-1:
-            if array[j] > array[j+1]:
-                swap array[j] and array[j+1]
-                swapped = true
-        if not swapped:
-            break  # Optimization: Stops if no swaps were made in a pass
+    # See if left child of root exists and is greater than root
+    if left < n and arr[i] < arr[left]:
+        largest = left
+
+    # See if right child of root exists and is greater than largest so far
+    if right < n and arr[largest] < arr[right]:
+        largest = right
+
+    # Change root, if needed
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]  # swap
+        heapify(arr, n, largest)
+
+def heapSort(arr):
+    n = len(arr)
+
+    # Build a max heap
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+
+    # One by one extract elements
+    for i in range(n-1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]  # swap
+        heapify(arr, i, 0)
 ```
----
 
-# Edge Cases  
-- **Already Sorted Array** → Best-case scenario, only one pass required.  
-- **Reverse Sorted Array** → Worst-case scenario, takes the maximum number of swaps.  
-- **All Elements the Same** → Only one pass needed, no swaps occur.  
-- **Single Element Array** → Already sorted, no swaps or comparisons needed.  
-- **Array with Duplicate Values** → Sorting proceeds normally.  
+### 7. **Edge Cases:**
+- **Empty Array:** If the array has zero elements, heap sort will not process any elements.
+- **Single Element:** A single-element array is already sorted.
+- **Array with Duplicate Elements:** Heap sort can handle arrays with duplicate elements.
+- **Array Sorted in Reverse Order:** Heap sort will still work efficiently even if the array is in reverse order.
+- **Large Inputs:** Heap sort can handle large datasets but will require significant time and memory resources for heapify operations.
 
-## Time Complexity  
-- **Best Case (Sorted Array with Optimization)** → O(n)  
-- **Worst Case (Reverse Sorted Array)** → O(n²)  
-- **Average Case** → O(n²)  
+### 8. **Time Complexity:**
+- **Build Heap:** O(n)
+- **Heapify Operation:** O(log n) per element.
+- **Overall Time Complexity:** O(n log n) for sorting.
 
-The number of comparisons in Bubble Sort is calculated as:
+### 9. **Space Complexity:**
+Heap Sort operates in-place, meaning it does not require extra space other than the input array.
+- **Space Complexity:** O(1)
 
-(n-1) + (n-2) + ... + 2 + 1 = (n(n-1))/2 ≈ O(n²)
+### 10. **Mathematics Behind Heap Sort:**
+Heap Sort relies on the concept of binary trees and the heap property (max heap or min heap).
+- **Heap Property:** For a max heap, each parent node is greater than or equal to its child nodes.
+- **Heapify Process:** The process of moving elements down the tree to maintain the heap property.
 
-If optimized with a "swapped" flag, best-case time complexity is **O(n)**.  
+### 11. **Visualizations:**
+Heap Sort can be visualized as a binary tree where:
+- At each iteration, the largest element (root) is moved to the last position of the heap.
+- The heap is then adjusted to maintain the heap property by performing a heapify operation.
 
-## Mathematics Behind Bubble Sort  
-- Bubble Sort repeatedly swaps elements until they are in order.  
-- The worst-case scenario performs approximately **n²/2** comparisons.  
-- The number of swaps in the worst case is also **n²/2**.  
+For example, consider this array: `[4, 10, 3, 5, 1]`
+- **Build the heap:** `[10, 5, 3, 4, 1]`
+- **Swap root with last element:** `[1, 5, 3, 4, 10]`
+- **Heapify:** `[5, 4, 3, 1, 10]`
+- **Repeat until sorted:** `[1, 3, 4, 5, 10]`
 
-## Space Complexity  
-- **O(1)** (in-place sorting, requires no extra space).  
-- No additional arrays or structures are used.  
+### 12. **Comparisons with Similar Algorithms:**
+- **Merge Sort:** Heap Sort and Merge Sort both have a time complexity of O(nlogn). However, Merge Sort uses additional space, whereas Heap Sort works in-place.
+- **Quick Sort:** Quick Sort generally has a better average case performance but can degrade to O(n^2) in the worst case, unlike Heap Sort which is O(nlogn) in both average and worst cases.
+- **Insertion Sort:** Insertion Sort is more efficient for small datasets or nearly sorted arrays, but Heap Sort is more efficient for larger datasets with a guaranteed O(nlogn) time complexity.
 
-## Visualizations  
-Example Array: **[5, 1, 4, 2, 8]**  
+### 13. **Pros and Cons:**
+- **Pros:**
+  - In-place sorting (no additional memory required).
+  - Time complexity is O(nlogn) for both worst and average cases.
+  - Efficient for large datasets.
+  
+- **Cons:**
+  - Not stable (relative order of equal elements may not be preserved).
+  - Slower in practice compared to algorithms like Quick Sort due to more overhead in comparisons and swaps.
+  - Not adaptive (doesn't take advantage of partially sorted data).
 
-**Pass 1:**  
-`[1, 5, 4, 2, 8] → [1, 4, 5, 2, 8] → [1, 4, 2, 5, 8] → [1, 4, 2, 5, 8]`  
+### 14. **Best Use Cases:**
+- **Large datasets:** When sorting large data sets, Heap Sort ensures guaranteed O(nlogn) performance.
+- **Priority Queues:** It is perfect for applications requiring efficient retrieval of the maximum or minimum element.
 
-**Pass 2:**  
-`[1, 4, 2, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8]`  
-
-**Pass 3:**  
-`[1, 2, 4, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8]`  
-
-**Pass 4:**  
-`[1, 2, 4, 5, 8]` (Sorted)  
-
-## Comparisons with Similar Algorithms  
-
-| Algorithm       | Best Case | Worst Case | Average Case | Space Complexity | Stable? |
-|---------------|----------|-----------|--------------|-----------------|--------|
-| **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) |  Yes |
-| **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) |  No |
-| **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) |  Yes |
-| **Merge Sort** | O(n log n) | O(n log n) | O(n log n) | O(n) |  Yes |
-| **Quick Sort** | O(n log n) | O(n²) | O(n log n) | O(log n) |  No |
-
-## Pros and Cons  
-
-### Pros  
- **Simple & Easy to Implement**  
- **Works Well for Small Datasets**  
- **Stable Sort** (Preserves order of duplicate elements)  
- **In-Place Sorting Algorithm** (Requires no extra memory)  
-
-###  Cons  
- **Inefficient for Large Datasets** (O(n²) complexity)  
- **Performs Too Many Swaps** (More than necessary in the worst case)  
- **Not Used in Practice for Sorting Large Lists**  
-
-## Best Use Cases  
-**When the array is nearly sorted** → Performs efficiently in O(n).  
-**When stability is needed** → Unlike Selection Sort, Bubble Sort maintains duplicate order.  
-**When simplicity matters** → Good for educational purposes or simple applications.  
-**Small datasets** → Can work reasonably well for very small input sizes.  
-
-## Further Optimizations  
-
-### **Stop Early If No Swaps Occur**  
-- Using a boolean `swapped` variable to exit early if no swaps occur in a pass.  
-- Reduces best-case time complexity to **O(n)**.  
-
-### **Bidirectional Bubble Sort (Cocktail Shaker Sort)**  
-- Moves both forward and backward through the list, reducing unnecessary passes.  
-- Improves performance slightly over standard Bubble Sort.  
-
-## Conclusion  
-Bubble Sort is a fundamental sorting algorithm that is **easy to implement but inefficient for large datasets**. Its best use cases are **small, nearly sorted arrays or educational purposes**. While practical alternatives like **Quick Sort, Merge Sort, and Heap Sort** are preferred, Bubble Sort remains an important concept in understanding sorting algorithms.  
+### 15. **Further Optimizations:**
+- **Binary Heap Optimizations:** Using a Fibonacci heap can optimize certain operations, reducing the time complexity for some applications.
+- **Parallel Heap Sort:** Parallelizing heapify operations can improve performance on multi-core systems for large datasets.
 
 
-References: https://www.youtube.com/watch?v=Dv4qLJcxus8 
+References: https://www.youtube.com/watch?v=2DmK_H7IdTo&list=PL9xmBV_5YoZOZSbGAXAPIq1BeUf4j20pl&index=6
