@@ -63,6 +63,7 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - https://www.algoexpert.io/questions
 - https://www.interviewbit.com/coding-interview-questions/
 - https://www.codewars.com/dashboard
+- https://algomaster.io/practice/dsa-patterns
 
 ## Learning Resources:
 - https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
