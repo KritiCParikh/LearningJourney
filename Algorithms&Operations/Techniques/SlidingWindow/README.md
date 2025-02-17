@@ -88,6 +88,51 @@ This technique reduces the complexity from **O(n * k)** (brute force) to **O(n)*
 - **Dynamic Sliding Window Size:** In some problems, the window size might change based on certain conditions (e.g., when a threshold is met). This can be handled by adjusting the window pointers dynamically.
 - **Advanced Data Structures:** For problems requiring additional operations (e.g., tracking the maximum/minimum in a window), advanced data structures like **deques** or **heaps** can be used for better performance.
 
+## Common Sliding Window Problems:
+
+1. **Maximum/Minimum Sum of Subarray of Size `k`:**
+   - **Problem:** Find the maximum (or minimum) sum of a subarray of size `k` within a given array.
+   - **Example:** Given an array `[1, 2, 3, 4, 5]` and `k = 3`, find the subarray of size `3` with the maximum sum.
+   
+2. **Longest Substring with K Distinct Characters:**
+   - **Problem:** Given a string, find the length of the longest substring with exactly `k` distinct characters.
+   - **Example:** For the string `"eceba"` and `k = 2`, the longest substring with 2 distinct characters is `"ece"`.
+
+3. **Find All Anagrams in a String:**
+   - **Problem:** Given a string and a pattern, find all occurrences of anagrams of the pattern within the string.
+   - **Example:** For the string `"cbaebabacd"` and the pattern `"abc"`, the anagrams are at indices `0` and `6`.
+
+4. **Maximum Product Subarray:**
+   - **Problem:** Given an integer array, find the contiguous subarray within the array that has the largest product.
+   - **Example:** For the array `[2, 3, -2, 4]`, the maximum product subarray is `[2, 3]`.
+
+5. **Subarray with Sum Equals K:**
+   - **Problem:** Find all contiguous subarrays that sum up to a given number `k`.
+   - **Example:** Given an array `[1, 1, 1, 1]` and `k = 2`, the subarrays are `[1, 1]` at indices `0,1` and `1,2`.
+
+6. **Longest Subarray with Sum Less Than or Equal to K:**
+   - **Problem:** Given an array and a number `k`, find the longest subarray where the sum of its elements is less than or equal to `k`.
+   - **Example:** For the array `[1, 2, 3, 4, 5]` and `k = 10`, the longest subarray is `[1, 2, 3, 4]`.
+
+7. **Sliding Window Maximum:**
+   - **Problem:** Given an array of integers, find the maximum element in every sliding window of size `k`.
+   - **Example:** For the array `[1, 3, -1, -3, 5, 3, 6, 7]` and `k = 3`, the maximums in each window are `[3, 3, 5, 5, 6, 7]`.
+
+8. **Longest Substring Without Repeating Characters:**
+   - **Problem:** Given a string, find the length of the longest substring without repeating characters.
+   - **Example:** For the string `"abcabcbb"`, the longest substring without repeating characters is `"abc"`, with a length of `3`.
+
+9. **Max Consecutive Ones in a Binary Array:**
+   - **Problem:** Given a binary array, find the maximum number of consecutive 1’s in the array.
+   - **Example:** For the array `[1,1,0,1,1,1]`, the maximum number of consecutive 1’s is `3`.
+
+10. **Minimum Window Substring:**
+    - **Problem:** Given two strings `s` and `t`, find the minimum window in `s` which will contain all the characters in `t`.
+    - **Example:** For `s = "ADOBECODEBANC"` and `t = "ABC"`, the minimum window is `"BANC"`.
+
+11. **Subarray with Sum Divisible by 3:**
+    - **Problem:** Find all subarrays whose sum is divisible by 3.
+    - **Example:** For the array `[3, 6, 2, 5, 1, 7]`, find the subarrays where the sum is divisible by 3. The subarray `[3, 6, 2]` has a sum of `11`, which is divisible by 3.
 
 
 
