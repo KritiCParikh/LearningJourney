@@ -76,6 +76,7 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - https://www.youtube.com/@CodeWithHarry
 - https://www.youtube.com/@BroCodez
 - https://www.youtube.com/@CSDojo
+- https://www.youtube.com/@RobEdwardsVideos
 - https://github.com/Rustam-Z/data-structures-and-algorithms?tab=readme-ov-file#introduction
 - https://www.youtube.com/channel/UCnxhETjJtTPs37hOZ7vQ88g - TechDose
 - https://www.youtube.com/channel/UC5WO7o71wvxMxEtLRkPhiQQ - Aditya Verma
