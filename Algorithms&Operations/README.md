@@ -531,4 +531,4 @@ These techniques are widely applicable across various data structures and proble
 - **Application in data structures** – Analyzing operations like dynamic array resizing.  
 
 
-References: https://www.wscubetech.com/resources/dsa/space-complexity, https://stackoverflow.com/questions/22398733/time-complexity-of-data-structures; https://www.youtube.com/watch?v=v4cd1O4zkGw, https://www.youtube.com/watch?v=fW_OS3LGB9Q, https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/, https://www.youtube.com/watch?v=kp3fCihUXEg
+References: https://www.wscubetech.com/resources/dsa/space-complexity, https://stackoverflow.com/questions/22398733/time-complexity-of-data-structures; https://www.youtube.com/watch?v=v4cd1O4zkGw, https://www.youtube.com/watch?v=fW_OS3LGB9Q, https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/, https://www.youtube.com/watch?v=kp3fCihUXEg, https://youtu.be/8hly31xKli0?si=clK9O_QvtlhmLLCV.
