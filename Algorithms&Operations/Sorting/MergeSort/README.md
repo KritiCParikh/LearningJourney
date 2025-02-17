@@ -1,4 +1,4 @@
-# Merge Sort: In-Depth Breakdown
+# Merge Sort
 
 ## 1. Definition:
 Merge Sort is a **divide and conquer** algorithm that divides the input array into two halves, recursively sorts each half, and then merges the sorted halves back together.
