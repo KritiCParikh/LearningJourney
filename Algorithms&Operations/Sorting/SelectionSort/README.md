@@ -56,7 +56,7 @@ In all cases, selection sort performs the same number of comparisons.
 ## 10. Mathematics Behind Selection Sort:
 - **Number of Comparisons:** In each iteration, there are `n - i` comparisons where `i` is the index of the current element being considered. The total comparisons across all iterations is the sum of the first `n - 1` integers:
   
-T(n) = (n - 1) * n / 2 = O(n²)
+T(n) = ((n - 1) * n) / 2 = O(n²)
 
 - **Swaps:** In the worst case, there are at most `n - 1` swaps.
 
