@@ -62,6 +62,7 @@ Here are some tips for approaching problem-solving in Data Structures and Algori
 - https://leetcode.com/discuss/study-guide/2009997/how-to-get-started-with-dsa-and-practice-leetcode-efficiently
 - https://www.algoexpert.io/questions
 - https://www.interviewbit.com/coding-interview-questions/
+- https://www.codewars.com/dashboard
 
 ## Learning Resources:
 - https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
