@@ -1,132 +1,103 @@
-# Bubble Sort 
+# Kadane's Algorithm – Maximum Subarray Sum
 
-## Definition  
-Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. The process is repeated until the list is sorted.  
+### **Definition**
+Kadane’s Algorithm is an efficient algorithm used to solve the **Maximum Subarray Problem**. It finds the contiguous subarray within a one-dimensional numeric array which has the largest sum. This algorithm operates in linear time and is a prime example of a **Dynamic Programming** approach.
 
-## Steps of Bubble Sort  
-1. Start from the first element of the array.  
-2. Compare the current element with the next element.  
-3. If the current element is greater than the next element, swap them.  
-4. Move to the next adjacent pair and repeat Steps 2 and 3 for the entire array.  
-5. The largest element moves to the end of the array after one complete pass.  
-6. Repeat the process for the remaining elements until the array is sorted.  
+### **Steps**
+1. **Initialize two variables**:
+   - `current_sum`: Keeps track of the maximum sum of the subarray ending at the current index.
+   - `max_sum`: Tracks the maximum sum found so far across all subarrays.
+   
+2. **Iterate through the array**:
+   - For each element, update `current_sum` to be the maximum of:
+     - The current element itself (starting a new subarray), or
+     - The sum of the current element plus `current_sum` (extending the existing subarray).
+   
+3. **Update `max_sum`** to be the maximum of `max_sum` and `current_sum` after each iteration.
 
-## Conditions  
-- The array should be mutable since swaps are required.  
-- The input data can be in any order (sorted, reverse sorted, or random).  
-- Works well for small datasets but is inefficient for large datasets.  
+4. **Return `max_sum`** as the result.
 
-## Applications of Bubble Sort  
-- **Education:** Used to teach sorting concepts due to its simplicity.  
-- **Computer Graphics:** Occasionally used in graphics applications where sorting is required.  
-- **Embedded Systems:** Suitable for sorting small data sets in resource-constrained environments.  
-- **Detecting Nearly Sorted Arrays:** Can be used when the list is almost sorted with few misplaced elements.  
+### **Conditions**
+- The input array must contain at least one element. If the array is empty, the problem is undefined.
+- Kadane’s algorithm works even with arrays that contain negative numbers, as it will reset `current_sum` to the current element if adding the element causes a decrease in the sum.
+  
+### **Applications**
+- **Financial Analysis**: For finding the maximum profit from a series of stock prices over time.
+- **Signal Processing**: Identifying the most significant subarray in a signal for maximum power.
+- **Image Processing**: Finding regions of interest that provide the most valuable data from an image matrix.
+- **Machine Learning**: Used in feature selection for time series problems.
 
-## Real-Life Examples  
-- **Sorting Playing Cards:** If you manually sort a deck by repeatedly swapping adjacent cards, you’re using Bubble Sort.  
-- **Queue Management:** Arranging people in a line based on some priority using repeated swaps.  
-- **Leaderboard Ranking:** Ranking players based on scores by repeatedly comparing and swapping adjacent elements.  
+### **Real-Life Examples**
+1. **Stock Market**: Given a series of stock price changes (both positive and negative), Kadane's algorithm can find the most profitable subsequence of buy-sell actions.
+2. **Daily Temperature Analysis**: Find the longest warm spell by identifying the subarray with the highest temperature sums in a week/month.
+3. **Game Scores**: Calculate the maximum sum of consecutive game scores to determine the peak performance streak.
 
-## Implementation  
+### **Implementation**
 
-### Pseudo Code  
-```text
-function bubbleSort(array):
-    n = length of array
-    for i from 0 to n-1:
-        swapped = false
-        for j from 0 to n-i-1:
-            if array[j] > array[j+1]:
-                swap array[j] and array[j+1]
-                swapped = true
-        if not swapped:
-            break  # Optimization: Stops if no swaps were made in a pass
+```python
+def kadane(arr):
+    current_sum = arr[0]
+    max_sum = arr[0]
+    
+    for i in range(1, len(arr)):
+        current_sum = max(arr[i], current_sum + arr[i])
+        max_sum = max(max_sum, current_sum)
+    
+    return max_sum
 ```
----
 
-# Edge Cases  
-- **Already Sorted Array** → Best-case scenario, only one pass required.  
-- **Reverse Sorted Array** → Worst-case scenario, takes the maximum number of swaps.  
-- **All Elements the Same** → Only one pass needed, no swaps occur.  
-- **Single Element Array** → Already sorted, no swaps or comparisons needed.  
-- **Array with Duplicate Values** → Sorting proceeds normally.  
+### **Edge Cases**
 
-## Time Complexity  
-- **Best Case (Sorted Array with Optimization)** → O(n)  
-- **Worst Case (Reverse Sorted Array)** → O(n²)  
-- **Average Case** → O(n²)  
+- **Single Element Array**: If the array has only one element, the answer is that element.
+- **All Negative Elements**: Kadane’s algorithm will still work by picking the largest negative number as the maximum subarray.
+- **All Positive Elements**: The entire array will be the subarray with the maximum sum.
+- **Array with Zeros**: Zeros can be part of the optimal subarray or might be discarded, depending on the surrounding elements.
 
-The number of comparisons in Bubble Sort is calculated as:
+### **Time Complexity**
+- **O(n)**: The algorithm only iterates through the array once, making it linear in terms of time complexity, where **n** is the number of elements in the array.
 
-(n-1) + (n-2) + ... + 2 + 1 = (n(n-1))/2 ≈ O(n²)
+### **Space Complexity**
+- **O(1)**: Only two variables (`current_sum` and `max_sum`) are required to store intermediate results, resulting in constant space complexity.
 
-If optimized with a "swapped" flag, best-case time complexity is **O(n)**.  
+### **Mathematics Behind This**
+Kadane’s algorithm uses the recurrence relation:
 
-## Mathematics Behind Bubble Sort  
-- Bubble Sort repeatedly swaps elements until they are in order.  
-- The worst-case scenario performs approximately **n²/2** comparisons.  
-- The number of swaps in the worst case is also **n²/2**.  
+current_sum(i)=max(arr[i],current_sum(i−1)+arr[i])
 
-## Space Complexity  
-- **O(1)** (in-place sorting, requires no extra space).  
-- No additional arrays or structures are used.  
+This relation ensures that at each step, the algorithm chooses between starting a new subarray or extending the existing one based on which option yields a higher sum. This is the core of **dynamic programming**.
 
-## Visualizations  
-Example Array: **[5, 1, 4, 2, 8]**  
+### **Visualizations**
+Imagine an array `A = [-2, 1, -3, 4, -1, 2, 1, -5, 4]`. Initially, `current_sum = -2` and `max_sum = -2`. As we move through the array:
 
-**Pass 1:**  
-`[1, 5, 4, 2, 8] → [1, 4, 5, 2, 8] → [1, 4, 2, 5, 8] → [1, 4, 2, 5, 8]`  
+- At index 1: `current_sum = 1` → `max_sum = 1`.
+- At index 2: `current_sum = -2` → `max_sum = 1`.
+- Continue this process, and we get `max_sum = 6`.
 
-**Pass 2:**  
-`[1, 4, 2, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8]`  
+### **Comparisons with Similar Algorithms**
+- **Brute Force Approach**: Checking all possible subarrays would take **O(n^2)** time, as it requires nested loops to evaluate each subarray.
+- **Divide and Conquer**: This approach, although more efficient than brute force (**O(n log n)**), is still slower than Kadane’s algorithm, which is linear.
 
-**Pass 3:**  
-`[1, 2, 4, 5, 8] → [1, 2, 4, 5, 8] → [1, 2, 4, 5, 8]`  
+Kadane’s algorithm is more efficient for this problem than other methods because it uses **dynamic programming** to eliminate unnecessary recalculations, reducing the time complexity.
 
-**Pass 4:**  
-`[1, 2, 4, 5, 8]` (Sorted)  
+### **Pros and Cons**
+**Pros**:
+- **Optimal Time Complexity**: O(n), making it extremely efficient for large datasets.
+- **Simple and Elegant**: The algorithm’s logic is straightforward and easy to implement.
+- **Works with Negative Numbers**: It’s designed to handle negative numbers, which may be a challenge for other algorithms.
 
-## Comparisons with Similar Algorithms  
+**Cons**:
+- **Limited to Contiguous Subarrays**: Kadane's algorithm only works for problems involving contiguous subarrays; it’s not applicable for non-contiguous subarrays.
+- **Can’t Handle Multiple Maximum Subarrays**: It only returns the sum of the single subarray with the largest sum, not the actual subarray or multiple maximum subarrays.
 
-| Algorithm       | Best Case | Worst Case | Average Case | Space Complexity | Stable? |
-|---------------|----------|-----------|--------------|-----------------|--------|
-| **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) |  Yes |
-| **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) |  No |
-| **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) |  Yes |
-| **Merge Sort** | O(n log n) | O(n log n) | O(n log n) | O(n) |  Yes |
-| **Quick Sort** | O(n log n) | O(n²) | O(n log n) | O(log n) |  No |
+### **Best Use Cases**
+- **Stock Price Analysis**: Find the most profitable window of time to buy and sell stocks.
+- **Performance Tracking**: Track the maximum continuous performance or success streak.
+- **Profit Maximization in Operations**: Maximize profits in business scenarios where the values change over time.
 
-## Pros and Cons  
+### **Further Optimizations**
+While Kadane’s algorithm is optimal in terms of time complexity, one possible optimization would involve tracking the subarray itself, not just the sum. To achieve this, we can modify the algorithm to store the start and end indices of the subarray with the maximum sum.
 
-### Pros  
- **Simple & Easy to Implement**  
- **Works Well for Small Datasets**  
- **Stable Sort** (Preserves order of duplicate elements)  
- **In-Place Sorting Algorithm** (Requires no extra memory)  
-
-###  Cons  
- **Inefficient for Large Datasets** (O(n²) complexity)  
- **Performs Too Many Swaps** (More than necessary in the worst case)  
- **Not Used in Practice for Sorting Large Lists**  
-
-## Best Use Cases  
-**When the array is nearly sorted** → Performs efficiently in O(n).  
-**When stability is needed** → Unlike Selection Sort, Bubble Sort maintains duplicate order.  
-**When simplicity matters** → Good for educational purposes or simple applications.  
-**Small datasets** → Can work reasonably well for very small input sizes.  
-
-## Further Optimizations  
-
-### **Stop Early If No Swaps Occur**  
-- Using a boolean `swapped` variable to exit early if no swaps occur in a pass.  
-- Reduces best-case time complexity to **O(n)**.  
-
-### **Bidirectional Bubble Sort (Cocktail Shaker Sort)**  
-- Moves both forward and backward through the list, reducing unnecessary passes.  
-- Improves performance slightly over standard Bubble Sort.  
-
-## Conclusion  
-Bubble Sort is a fundamental sorting algorithm that is **easy to implement but inefficient for large datasets**. Its best use cases are **small, nearly sorted arrays or educational purposes**. While practical alternatives like **Quick Sort, Merge Sort, and Heap Sort** are preferred, Bubble Sort remains an important concept in understanding sorting algorithms.  
+Example: Along with `current_sum` and `max_sum`, track the start and end indices for the subarray, allowing you to return not just the sum but the actual subarray as well.
 
 
-References: https://www.youtube.com/watch?v=Dv4qLJcxus8 
+References: https://www.youtube.com/watch?v=NUWAXbSlsws
