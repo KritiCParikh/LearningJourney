@@ -84,9 +84,9 @@ Heap Sort can be visualized as a binary tree where:
 - The heap is then adjusted to maintain the heap property by performing a heapify operation.
 
 For example, consider this array: `[4, 10, 3, 5, 1]`
-- **Build the heap:** `[10, 5, 3, 4, 1]`
-- **Swap root with last element:** `[1, 5, 3, 4, 10]`
-- **Heapify:** `[5, 4, 3, 1, 10]`
+- **Build the heap:** `[10, 5, 3, 4, 1]` - The first step is to build a max-heap from the unsorted list. In a max-heap, each parent node is greater than or equal to its child nodes.
+- **Swap root with last element:** `[1, 5, 3, 4, 10]` - We swap the root (the largest element, `10`) with the last element in the list (`1`). This places the largest element in its correct final position.
+- **Heapify:** `[5, 4, 3, 1, 10]` - We need to restore the heap property because the root is no longer the largest element. We heapify the root (currently `1`). The largest child of `1` is `5`, so we swap `1` with `5`.
 - **Repeat until sorted:** `[1, 3, 4, 5, 10]`
 
 ### 12. **Comparisons with Similar Algorithms:**
