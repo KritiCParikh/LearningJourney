@@ -68,7 +68,7 @@ sorted_words = sorted(freq_map.keys(), key=lambda word: (-freq_map[word], word))
 ## Result
 ["the", "is", "sunny", "day"]
 
-#### Step 3: Return the Top k Elements
+## Step 3: Return the Top k Elements
 return sorted_words[:k]
 
 - Extracts the top k most frequent words.
