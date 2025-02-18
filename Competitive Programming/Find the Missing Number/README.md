@@ -1,7 +1,7 @@
 ### **Find the Missing Number**
 
-LeetCode: 268
-Question: https://leetcode.com/problems/missing-number/description/
+- LeetCode: 268
+- Question: https://leetcode.com/problems/missing-number/description/
 
 **Purpose**:  
 The purpose of this algorithm is to find the missing number in an array of `n-1` elements, where the elements range from `1` to `n`. There is exactly one number missing from the array.
