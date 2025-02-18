@@ -2,6 +2,7 @@
 
 - LeetCode: 42
 - Question: https://leetcode.com/problems/trapping-rain-water/description/
+- Company: Goldman Sachs.
 ---
 
 # **Question:**  
