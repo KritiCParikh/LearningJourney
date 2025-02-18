@@ -5,15 +5,12 @@ Given two arrays, find the intersection elements while maintaining their frequen
 
 ### **Example**
 #### **Input:**
-```plaintext
 arr1 = [1, 1, 2, 2, 2]
+
 arr2 = [1, 1, 1, 2, 2, 3, 4, 5]
-```
 
 #### **Output:**
 [1, 1, 2, 2]
-
-```
 
 ### **Count occurrences:**
 - Use a hashmap (`Counter`) to store the frequency of elements in `arr1`.
