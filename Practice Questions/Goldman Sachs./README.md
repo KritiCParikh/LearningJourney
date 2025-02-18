@@ -1,9 +1,1 @@
-# Competitive Programming 🖥️🚗🎾🦾
-
-This is my attempt to dive into the world of Computer Science, Data Structures, Algorithms, problem-solving, coding approaches, and much more. As Competitive Programming (CP) is all about improving problem-solving skills, optimizing solutions, and thinking critically under time constraints, and while I’m a life-long learner, I’ll always be glad to receive any feedback or suggestions on my approaches!
-
-### What’s Inside?
-- Resources
-- My attempts to solve problems
-- Techniques and strategies
-- And more!
+References: https://interviewkickstart.com/blogs/interview-questions/goldman-sachs-interview-questions, https://leetcode.com/discuss/interview-question/5199331/Goldman-Sachs-or-Coderpad-or-Trapping-Rain-water-or-Winner-of-circular-game, https://github.com/dedeepya42/goldmansachs, https://leetcode.com/discuss/interview-question/4265464/Goldman-Sachs-or-Coderpad/, https://github.com/jobream/Leetcode-Company-Wise-Problems/blob/master/Goldman%20Sachs%20-%20LeetCode.pdf, https://github.com/krishnadey30/LeetCode-Questions-CompanyWise/blob/master/goldman-sachs_2year.csv, 
