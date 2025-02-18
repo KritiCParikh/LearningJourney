@@ -1,5 +1,5 @@
 # **Question:**  
-Given two fractions \( \frac{a}{b} + \frac{c}{d} \), simplify the expression and return the result in its simplest form.
+Given two fractions a/b + c/d, simplify the expression and return the result in its simplest form.
 
 ---
 
@@ -19,7 +19,7 @@ a = 1, b = 2, c = 1, d = 3
 ---
 
 ## **Explanation:**  
-- To add two fractions \( \frac{a}{b} \) and \( \frac{c}{d} \), first find a common denominator (which is the least common denominator).  
+- To add two fractions a/b and c/d, first find a common denominator (which is the least common denominator).  
 - Then, add the numerators accordingly.  
 - After addition, simplify the resulting fraction by dividing both the numerator and the denominator by their greatest common divisor (GCD).  
 
