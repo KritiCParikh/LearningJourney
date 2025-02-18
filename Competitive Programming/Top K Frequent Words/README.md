@@ -62,14 +62,15 @@ Counter({'the': 4, 'is': 3, 'sunny': 2, 'day': 1})
 sorted_words = sorted(freq_map.keys(), key=lambda word: (-freq_map[word], word))
 ```
 ## Sorting Key:
--freq_map[word]: Sort by highest frequency first.
+- freq_map[word]: Sort by highest frequency first.
 - word: Sort lexicographically in case of ties.
 
-#### Step 2: Sorting
+## Result
 ["the", "is", "sunny", "day"]
 
 #### Step 3: Return the Top k Elements
 return sorted_words[:k]
+
 - Extracts the top k most frequent words.
 ---
 # Complexity Analysis:
