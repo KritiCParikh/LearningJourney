@@ -1,73 +1,46 @@
 # **Question:**  
-Given an array where each element is a sub-array of length two, where:  
-- The first index contains the student’s name.  
-- The second index contains the marks scored.  
-
-Find the maximum average score among all students. Each student may have multiple scores across different subjects.
+Given two fractions \( \frac{a}{b} + \frac{c}{d} \), simplify the expression and return the result in its simplest form.
 
 ---
 
 ## **Example**  
 **Input:**  
-```python
-students = [
-    ["Alice", 85], 
-    ["Bob", 90], 
-    ["Alice", 95], 
-    ["Bob", 80], 
-    ["Alice", 88]
-]
-```
-**Input:** 
-```
-Maximum average score: 89.33 (Alice)
-```
+a = 1, b = 2, c = 1, d = 3
+
+**Output:**  
+5/6
+
+
+---
 
 ## **Concept Name:**  
-**Hashing (Using Dictionary for Aggregation)**  
+**Fraction Addition and Simplification**  
 
 ---
 
 ## **Explanation:**  
-- Use a dictionary to store each student's total marks and count of subjects.  
-- Iterate through the list, updating total marks and count for each student.  
-- Compute the average for each student and track the maximum.  
-- Return the student with the highest average.  
+- To add two fractions \( \frac{a}{b} \) and \( \frac{c}{d} \), first find a common denominator (which is the least common denominator).  
+- Then, add the numerators accordingly.  
+- After addition, simplify the resulting fraction by dividing both the numerator and the denominator by their greatest common divisor (GCD).  
 
 ---
 
 ## **Python Solution:**  
 ```python
-from collections import defaultdict
+import math
 
-def max_average_score(students):
-    scores = defaultdict(lambda: [0, 0])  # {student: [total_marks, count]}
+def add_fractions(a, b, c, d):
+    # Find the common denominator
+    denominator = b * d
+    numerator = (a * d) + (c * b)
     
-    for name, marks in students:
-        scores[name][0] += marks  # Add marks
-        scores[name][1] += 1  # Increment count
+    # Simplify the fraction
+    gcd_value = math.gcd(numerator, denominator)
     
-    max_avg = 0
-    top_student = ""
-
-    for name, (total, count) in scores.items():
-        avg = total / count
-        if avg > max_avg:
-            max_avg = avg
-            top_student = name
-    
-    return top_student, round(max_avg, 2)
+    # Return the simplified fraction
+    return f"{numerator // gcd_value}/{denominator // gcd_value}"
 
 # Example usage
-students = [
-    ["Alice", 85], 
-    ["Bob", 90], 
-    ["Alice", 95], 
-    ["Bob", 80], 
-    ["Alice", 88]
-]
-
-student, avg = max_average_score(students)
-print(f"Maximum average score: {avg} ({student})")  # Output: Maximum average score: 89.33 (Alice)
-
-
+a, b, c, d = 1, 2, 1, 3
+print(add_fractions(a, b, c, d))  # Output: "5/6"
+```
