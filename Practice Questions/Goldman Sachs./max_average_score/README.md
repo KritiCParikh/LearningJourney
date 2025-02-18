@@ -18,7 +18,7 @@ students = [
     ["Alice", 88]
 ]
 ```
-**Input:** 
+**Output:** 
 ```
 Maximum average score: 89.33 (Alice)
 ```
