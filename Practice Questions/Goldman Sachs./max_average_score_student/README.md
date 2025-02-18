@@ -60,6 +60,7 @@ The function computes the average score for each student:
 - Alice: (80 + 85 + 90) / 3 = 85.0
 - Bob: (75 + 80 + 95) / 3 = 83.33
 - Charlie: (90 + 90 + 90) / 3 = 90.0
+
 Since Charlie has the highest average score, the output will be:
 
 - The student with the maximum average score is Charlie with an average score of 90.0
