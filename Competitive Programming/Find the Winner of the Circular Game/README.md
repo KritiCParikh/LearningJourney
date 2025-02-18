@@ -1,3 +1,10 @@
+# Find the Winner of the Circular Game
+
+- LeetCode: 1823
+- Question: https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/
+- Company - Goldman Sachs.
+
+
 ## Problem Explanation
 
 This problem is based on a variation of the **Josephus problem**. In this problem, `n` friends are sitting in a circle, and every `k`-th person is eliminated. The goal is to determine which person will be the last one remaining.
