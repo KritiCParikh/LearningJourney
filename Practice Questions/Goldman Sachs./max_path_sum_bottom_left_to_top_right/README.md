@@ -62,7 +62,7 @@ matrix = [
 
 print(max_path_sum(matrix))  # Output: 16
 
-
+```
 ----
 ## **Explanation of the Output:**
 The maximum sum from bottom left to top right, while only moving up or right, is 16.
